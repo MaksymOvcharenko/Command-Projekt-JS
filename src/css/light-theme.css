@@ -2,7 +2,7 @@ body.light-theme {
   background: #f0f0f0;
   color: #292929;
 }
-/* button {
-  padding: 10px 20px;
-  cursor: pointer;
-} */
+.light-theme#icon-mobile {
+  fill: #292929;
+  stroke: #292929;
+}
