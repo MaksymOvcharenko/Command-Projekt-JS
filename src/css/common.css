@@ -1,5 +1,16 @@
 /* :root {
 } */
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+:root {
+  --black: #292929;
+  --accet-green: #00b068;
+  --white: #f0f0f0;
+  --light-grey: #e4e5e6;
+  --light-accent: #bcdfd1;
+}
 @font-face {
   font-family: 'Impact';
   src: url('../fonts/impact.ttf') format('truetype');
@@ -11,7 +22,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
-  color: #fbfbfb;
 }
 
 .container {
