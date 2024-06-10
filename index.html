@@ -13,7 +13,7 @@
     />
     
     <script type="module" crossorigin src="/Command-Projekt-JS/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Command-Projekt-JS/assets/index-96df8064.css">
+    <link rel="stylesheet" href="/Command-Projekt-JS/assets/index-ccc29855.css">
   </head>
 <body class="light-theme"></body>
     <section id="header">
@@ -32,9 +32,9 @@
         <li class="menu-item"><a href="#"></a>Contacts</li>
       </ul>
     </nav>
-    <button type="button" class="mobile-menu-btn">
-      <svg class="mobile-menu-icon" width="22" height="16">
-        <use href="/Command-Projekt-JS/assets/icons-e1b3b705.svg#icon-mob-menu"></use>
+    <button type="button" class="mobile-menu-btn" data-mobile-open>
+      <svg class="mobile-menu-icon" width="22" height="16" id="icon_mobile">
+        <use href="/Command-Projekt-JS/assets/icons-2a8fe8c8.svg#icon-mob-menu"></use>
       </svg>
     </button>
   </div>
@@ -73,11 +73,34 @@
     <div class="container">
   <h1 class="FooterTest">Footer</h1>
 </div>
-
-    <div class="container">
-  <h1 class="ModalTest">Modal</h1>
-</div>
  -->
+    <div class="mobile-menu container" data-mobile id="mobile-menus">
+  <div class="header-mobile">
+    <a href="../index.html" class="logo"
+      >Lloyd<span class="logo-green">Jefferson.</span></a
+    >
+    <button type="button" class="mobile-menu-btn" data-mobile-close>
+      <svg class="mobile-menu-icon" width="32" height="32" id="icon_close">
+        <use href="/Command-Projekt-JS/assets/icons-2a8fe8c8.svg#icon-close-menu"></use>
+      </svg>
+    </button>
+  </div>
+
+  <nav class="nav-menu-mobile">
+    <ul class="menu-list-mobile">
+      <li class="menu-item-mobile"><a href="#">About me</a></li>
+      <li class="menu-item-mobile"><a href="#"></a>Projects</li>
+      <li class="menu-item-mobile"><a href="#"></a>Contacts</li>
+    </ul>
+  </nav>
+  <div class="switch-mobiles">
+    <label class="switch-mobile">
+      <input type="checkbox" id="theme-toggle-mobile" />
+      <span class="slider-mobile"></span>
+    </label>
+  </div>
+</div>
+
 
     
   </body>
