@@ -9,7 +9,7 @@
   position: fixed;
 
   overflow: auto;
-  top: 15px;
+  top: 19px;
 
   height: 100vh;
   z-index: 1;
@@ -84,7 +84,8 @@ input:checked + .slider-mobile:before {
 }
 .header-mobile {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 108px;
   align-items: center;
 }
 .mobile-menu-btn {

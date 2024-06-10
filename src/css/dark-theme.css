@@ -7,12 +7,12 @@ body.dark-theme.header.headers.mobile-menu-btn.mobile-menu-icon {
   stroke: #f0f0f0;
 }
 
-button {
+/* button {
   padding: 10px 20px;
   cursor: pointer;
   color: black;
   background-color: white;
-}
+} */
 /* svg {
   fill: #f0f0f0;
   stroke: #f0f0f0;
