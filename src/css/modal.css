@@ -88,7 +88,9 @@ input:checked + .slider-mobile:before {
   gap: 108px;
   align-items: center;
 }
-.mobile-menu-btn {
+.mobile-menu-btns {
+  background: transparent;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;

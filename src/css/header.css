@@ -99,8 +99,11 @@ input:checked + .slider:before {
 }
 
 @media screen and (min-width: 768px) {
+  .headers {
+    justify-content: space-between;
+  }
   .container {
-    width: 768px;
+    width: 704px;
     padding-left: 32px;
     padding-right: 32px;
   }

@@ -1,3 +1,143 @@
-.HeroTest {
-  background: #1f48c5;
+@media screen and (min-width: 0px) {
+  .hero {
+    background-image: url('../img/icon-decor-bg.svg');
+    background-size: cover;
+    padding-top: 112px;
+  }
+  .container {
+  }
+  .hero-title {
+    font-family: 'Impact', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  .hero-avatars {
+    display: none;
+  }
+  .greentext {
+    color: #00b068;
+  }
+  .hero-link {
+  }
+  .hero-link-design {
+    display: flex;
+    width: 320px;
+    height: 92px;
+    align-items: center;
+    gap: 12px;
+    justify-content: start;
+    position: relative;
+    transition: transform 1s ease;
+  }
+  .hero-link-design:hover .hero-arrow {
+    transition: transform 1s ease;
+    transform: translateX(100px);
+  }
+  .hero-link-design:hover .hero-design-link {
+    transition: transform 1s ease;
+    transform: translateX(100px);
+  }
+  .hero-link-design:hover .hero-design-container {
+    background: rgba(0, 176, 104, 0.6);
+  }
+  .hero-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 72px;
+  }
+  .hero-arrow {
+    stroke: #00b068;
+    fill: #00b068;
+  }
+  .hero-design-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .hero-design-container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: rgba(0, 176, 104, 0.2);
+    border-radius: 16px;
+    width: 165px;
+    height: 92px;
+  }
+  .social-container {
+    background: #e4e5e6;
+    width: 100%;
+  }
+  .social-list {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+  .social-item {
+    display: flex;
+    justify-content: center;
+  }
+  .social-link {
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url('../img/bg-tablet.png');
+    background-size: cover;
+    padding-top: 72px;
+  }
+  .hero-title {
+    font-weight: 400;
+    font-size: 136px;
+    line-height: 115%;
+    margin-bottom: 60px;
+  }
+  .hero-link-design {
+    width: 416px;
+    margin-bottom: 40px;
+  }
+  .hero-design-container {
+    border-radius: 16px;
+    width: 264px;
+    height: 96px;
+    right: 10px;
+  }
+  .hero-description {
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.03em;
+    width: 704px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-avatars {
+    display: block;
+    flex-shrink: 0;
+  }
+  .container {
+    width: 1216px;
+  }
+  .hero-title {
+    /* display: flex;
+    flex-wrap: wrap; */
+  }
 }
