@@ -53,8 +53,8 @@ input:checked + .slider:before {
 
 @media screen and (min-width: 0px) {
   #header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .logo {
     font-family: 'Impact', sans-serif;
