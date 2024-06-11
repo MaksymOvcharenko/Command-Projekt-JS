@@ -14,10 +14,18 @@ export function initializeThemeSwitcher(themeToggle) {
   themeToggle.addEventListener('change', function () {
     if (themeToggle.checked) {
       document.body.className = 'dark-theme';
-      themeToggleMobilePlace.classList.add('dark-theme-mobile');
+      document.documentElement.style.setProperty('--accet-green', '#14c57c');
+      document.documentElement.style.setProperty('--color-text', '#f0f0f0');
+      document.documentElement.style.setProperty('--bg-color', '#292929');
+
+      document.themeToggleMobilePlace.classList.add('dark-theme-mobile');
       localStorage.setItem('theme', 'dark-theme');
     } else {
       document.body.className = 'light-theme';
+      document.documentElement.style.setProperty('--accet-green', '#00b068');
+      document.documentElement.style.setProperty('--color-text', '#292929');
+      document.documentElement.style.setProperty('--bg-color', '#f0f0f0');
+
       themeToggleMobilePlace.classList.remove('dark-theme-mobile');
       localStorage.setItem('theme', 'light-theme');
     }
