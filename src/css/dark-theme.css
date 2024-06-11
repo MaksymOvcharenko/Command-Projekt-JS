@@ -35,3 +35,6 @@ body.dark-theme #icon_mobile {
 body.dark-theme .social-container {
   background: #2a2d32;
 }
+body.dark-theme .greentext {
+  color: #14c57c;
+}
