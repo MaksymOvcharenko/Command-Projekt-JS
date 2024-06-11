@@ -1,9 +1,4 @@
-/* .FaqTest {
-  background: #1e2023;
-} */
-
 .FAQ {
-  background-color: #1e2023;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -11,102 +6,41 @@
   padding: 0px 20px;
   position: relative;
 }
+.icon-down-btn {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
-.FAQ .headline {
+.headline {
   position: relative;
   width: 320px;
   margin-top: -1px;
   color: transparent;
 }
 
-.FAQ .text-wrapper {
-  color: #efefef;
+.text-wrapper {
+  min-width: 320px;
+  color: #292929;
+  font-family: Impact;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px; /* 123.077% */
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
 }
 
-.FAQ .span {
-  color: #14c57c;
-}
-
-.FAQ .questions {
-  flex-direction: column;
-  width: 320px;
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.FAQ .element {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 24px;
-  padding: 28px 24px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-  background-color: #14c57c33;
-  border-radius: 16px;
-}
-
-.FAQ .text {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
-
-.FAQ .div {
-  position: relative;
-  flex: 1;
-  margin-top: -1px;
-  color: #efefef;
-}
-
-.FAQ .button {
-  position: relative;
-  width: 32px;
-  height: 32px;
-}
-
-.FAQ .p {
-  position: relative;
-  align-self: stretch;
-  color: #efefef;
-}
-
-.FAQ .element-2 {
-  justify-content: flex-end;
-  gap: 16px;
-  padding: 28px 24px;
-  align-self: stretch;
-  width: 100%;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-color: #cccccc;
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.FAQ .text-2 {
-  position: relative;
-  align-self: stretch;
-  width: 224px;
-  margin-top: -1px;
-  color: #efefef;
-}
-
-.FAQ .text-3 {
-  position: relative;
-  align-self: stretch;
-  width: 216px;
-  margin-top: -1px;
-  color: #efefef;
+.greentext {
+  font-family: Impact;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
 }
