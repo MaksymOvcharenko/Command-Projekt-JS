@@ -1,3 +1,6 @@
+.about-me {
+  margin-top: 80px;
+}
 .about-me-title {
   font-family: "Impact", sans-serif;
   font-weight: 400;
@@ -5,8 +8,7 @@
   line-height: 1.23;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: right;
-  /* max-width: 217px; */
+  text-align: left;
   margin-bottom: 40px;
 }
 
@@ -14,18 +16,18 @@
   color: #00b068;
 }
 
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 40px;
+  /* margin-bottom: 40px; */
+}
+
 .about-me-img {
   border-radius: 16px;
   width: 320px;
   height: 374px;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
 }
 
 .info-title {
@@ -36,6 +38,7 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   margin-bottom: 32px;
+  text-align: left;
 }
 
 .about-me-txt {
@@ -44,4 +47,94 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
+}
+
+.about-me-item {
+  position: relative;
+  padding-left: 8px;
+}
+
+.about-me-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  border-radius: 1px;
+  width: 4px;
+  height: 4px;
+  background: #00b068;
+  transform: rotate(-180deg);
+  /* transform: translateY(-50%); */
+}
+
+.my-advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+
+}
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    margin-top: 124px;
+  }
+
+  .about-me-title {
+  font-size: 108px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  }
+
+  .about-me-container {
+    flex-direction: row;
+    gap: 32px 0;
+    /* margin-bottom: 124px; */
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .about-me-img {
+    padding-top: 408px;
+    width: 336px;
+    height: 392px;
+  }
+
+  .info-title {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
+
+  .my-bio, .my-img, .my-education, .my-role {
+    flex: 1 1 50%;
+  }
+
+  .my-advantages {
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-me {
+    margin-top: 164px;
+  }
+
+  .about-me-container {
+    gap: 136px 0;
+  }
+
+  .about-me-img {
+    padding-top: 312px;
+    width: 384px;
+    height: 448px;
+  }
+
+.my-advantages {
+  gap: 136px;
+  margin-top: 80px;
+}
+
 }
