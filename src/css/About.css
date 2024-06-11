@@ -1,6 +1,7 @@
 .about-me {
   margin-top: 80px;
 }
+
 .about-me-title {
   font-family: "Impact", sans-serif;
   font-weight: 400;
@@ -81,9 +82,9 @@
   }
 
   .about-me-title {
-  font-size: 108px;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
   }
 
   .about-me-container {
@@ -106,7 +107,10 @@
     letter-spacing: 0.01em;
   }
 
-  .my-bio, .my-img, .my-education, .my-role {
+  .my-bio,
+  .my-img,
+  .my-education,
+  .my-role {
     flex: 1 1 50%;
   }
 
@@ -132,9 +136,9 @@
     height: 448px;
   }
 
-.my-advantages {
-  gap: 136px;
-  margin-top: 80px;
-}
+  .my-advantages {
+    gap: 136px;
+    margin-top: 80px;
+  }
 
 }
