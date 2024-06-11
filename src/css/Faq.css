@@ -32,19 +32,32 @@
     letter-spacing: 1.8px;
     text-transform: uppercase;
   }
-  .element {
-    display: flex;
-    gap: 16px;
+
+  .accordion-container {
   }
-  .text {
-    min-width: 224px;
-    min-height: 112px;
+  .ac {
     display: flex;
     padding: 28px 24px;
-    gap: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 24px;
+    align-self: stretch;
   }
-  .question {
-    font-family: Poppins;
+  .place {
+    display: flex;
+    padding: 28px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 16px;
+    background: rgba(0, 176, 104, 0.2);
+  }
+  .ac-header {
+    min-width: 224px;
+    min-height: auto;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -52,7 +65,16 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
   }
-  .icon-down-btn {
+  .ac-text {
+    min-width: 274px;
+    min-height: auto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.5px;
+  }
+  .ac-trigger {
     display: flex;
     width: 32px;
     height: 32px;
@@ -61,13 +83,6 @@
     align-items: center;
     gap: 10px;
     border: none;
-  }
-  .p {
-    display: none;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 24px; /* 150% */
-    letter-spacing: 0.5px;
+    background-color: transparent;
   }
 }
