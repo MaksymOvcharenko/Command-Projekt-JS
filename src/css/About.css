@@ -1,3 +1,47 @@
-.AboutTest {
-  background: #cd9027;
+.about-me-title {
+  font-family: "Impact", sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: right;
+  /* max-width: 217px; */
+  margin-bottom: 40px;
+}
+
+.about-me-title-span {
+  color: #00b068;
+}
+
+.about-me-img {
+  border-radius: 16px;
+  width: 320px;
+  height: 374px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.info-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.about-me-txt {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
 }
