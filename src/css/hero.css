@@ -1,8 +1,7 @@
 @media screen and (min-width: 0px) {
   .hero {
     background-image: url('../img/icon-decor-bg.svg');
-    background-size: cover;
-    padding-top: 112px;
+    margin-top: 112px;
   }
   .heros .container {
   }
@@ -32,6 +31,7 @@
     justify-content: start;
     position: relative;
     transition: transform 1s ease;
+    overflow: hidden;
   }
   .hero-link-design:hover .hero-arrow {
     transition: transform 1s ease;
@@ -52,6 +52,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 72px;
+    margin-top: 40px;
   }
   .hero-arrow {
     stroke: #00b068;
@@ -65,6 +66,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     position: relative;
+    overflow: hidden;
   }
   .hero-design-container {
     position: absolute;
@@ -74,6 +76,7 @@
     border-radius: 16px;
     width: 165px;
     height: 92px;
+    overflow: hidden;
   }
   .social-container {
     background: #e4e5e6;
@@ -100,9 +103,19 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .heros {
+    width: 704px;
+    /* background-image: url('../img/bg-tablet.png'); */
+
+    /* background-size: cover; */
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, center calc(100% - 54px);
+    background-size: auto, auto;
+    background-image: url('../img/icon-decor-bg.svg'),
+      url('../img/icon-decor-bg.svg');
+    background-clip: padding-box;
+  }
   .hero {
-    background-image: url('../img/bg-tablet.png');
-    background-size: cover;
     padding-top: 72px;
   }
   .hero-title {
@@ -133,8 +146,8 @@
     display: block;
     flex-shrink: 0;
   }
-  .heros .container {
-    /* width: 1216px; */
+  .heros {
+    width: 1216px;
   }
   .hero-title {
     /* display: flex;

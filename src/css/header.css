@@ -130,4 +130,7 @@ input:checked + .slider:before {
     padding-left: 100px;
     padding-right: 100px;
   }
+  .headers {
+    width: 1216px;
+  }
 }
