@@ -5,11 +5,11 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 :root {
-  --black: #292929;
+  --color-text: #292929;
   --accet-green: #00b068;
-  --white: #f0f0f0;
+  --bg-color: #f0f0f0;
   --light-grey: #e4e5e6;
-  --light-accent: #bcdfd1;
+  --light-accent: #14c57c;
 }
 @font-face {
   font-family: 'Impact';
