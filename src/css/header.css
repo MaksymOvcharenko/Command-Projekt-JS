@@ -88,9 +88,6 @@ input:checked + .slider:before {
     background: transparent;
     border: none;
   }
-  .mobile-menu-icon {
-    /* fill: #292929; */
-  }
 }
 @media screen and (min-width: 360px) {
   .headers .container {
@@ -100,7 +97,7 @@ input:checked + .slider:before {
 
 @media screen and (min-width: 768px) {
   .headers {
-    justify-content: space-between;
+    width: 704px;
   }
   .header .container {
     width: 704px;
