@@ -19,7 +19,7 @@
     display: none;
   }
   .greentext {
-    color: #00b068;
+    color: var(--accet-green);
   }
   .hero-link {
   }
