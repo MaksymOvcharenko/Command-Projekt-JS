@@ -11,6 +11,10 @@ body.dark-theme #icon_mobile {
   fill: #f0f0f0;
   stroke: #f0f0f0;
 }
+body.dark-theme .icon-color {
+  fill: #f0f0f0;
+  stroke: #f0f0f0;
+}
 .nav-menu-mobile {
   display: flex;
   justify-content: center;
