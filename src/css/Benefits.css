@@ -118,6 +118,12 @@
     max-width: 1280px;
     padding-left: 32px;
     padding-right: 32px;
+    background-image: url('../img/icon-decor-bg.svg');
+    background-size: 36%;
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    background-position-y: 5%;
+    padding-top: 112px;
   }
 
   .benefits-title {
