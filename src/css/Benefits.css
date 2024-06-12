@@ -4,7 +4,6 @@
 .container {
 }
 .benefits-title {
-  width: 320px;
   color: var(--Black);
   font-family: Impact;
   font-size: 52px;
@@ -38,7 +37,8 @@
   position: absolute;
   top: 25%;
   left: 25%;
-  fill: var(--accet-green);
+  fill: none;
+  stroke: var(--accet-green);
   flex-shrink: 0;
 }
 .benefits-titles {
@@ -58,4 +58,75 @@
   font-weight: 300;
   line-height: 1.5em;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .benefits-title {
+    font-size: 108px;
+    line-height: 1.14em;
+    letter-spacing: 0.01em;
+  }
+
+  .benefits-item:first-child {
+    margin-left: 368px;
+  }
+
+  .benefits-list {
+    width: 704px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-top: -20px;
+  }
+  .benefits-item {
+    width: 336px;
+  }
+  .benefits-icon-bg {
+  }
+  .benefits-icon {
+  }
+  .benefits-titles {
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+  .benefits-text {
+    width: 336px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .Benefits {
+  }
+  .container {
+  }
+  .benefits-title {
+  }
+  .benefits-title-span {
+  }
+  .benefits-list {
+  }
+  .benefits-item {
+  }
+  .benefits-icon-bg {
+  }
+  .benefits-icon {
+  }
+  .benefits-titles {
+  }
+  .benefits-text {
+  }
 }
