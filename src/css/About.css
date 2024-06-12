@@ -1,5 +1,6 @@
 .about-me {
-  margin-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .about-me-title {
@@ -14,15 +15,13 @@
 }
 
 .about-me-title-span {
-  color: #00b068;
+  color: var(--accet-green);
 }
 
 .about-me-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   gap: 40px;
-  /* margin-bottom: 40px; */
 }
 
 .about-me-img {
@@ -63,9 +62,7 @@
   border-radius: 1px;
   width: 4px;
   height: 4px;
-  background: #00b068;
-  /* transform: rotate(-180deg); */
-  /* transform: translateY(-50%); */
+  background: var(--accet-green);
 }
 
 .my-advantages {
@@ -73,11 +70,13 @@
   flex-direction: column;
   justify-content: center;
   gap: 40px;
+  margin-top: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .about-me {
-    margin-top: 124px;
+    padding-top: 124px;
+    padding-bottom: 124px;
   }
 
   .about-me-title {
@@ -88,14 +87,11 @@
 
   .about-me-container {
     flex-direction: row;
-    gap: 32px 0;
-    /* margin-bottom: 124px; */
-    flex-wrap: wrap;
+    gap: 32px;
     align-items: center;
   }
 
   .about-me-img {
-    /* margin-top: 408px; */
     width: 336px;
     height: 392px;
   }
@@ -126,20 +122,29 @@
     gap: 32px;
     margin-top: 60px;
   }
+
+  .info {
+    background-image: url(../img/about-me-decor-bg-2.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-clip: padding-box;
+    background-position: right 7% bottom 13%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .about-me {
-    margin-top: 164px;
+    padding-top: 164px;
+    padding-bottom: 164px;
   }
 
   .about-me-container {
-    /* gap: 136px 0; */
+    gap: 136px;
     padding-left: 208px;
   }
 
   .about-me-img {
-    margin-top: 280px;
+    margin-top: 312px;
     width: 384px;
     height: 448px;
     border: 1px solid #000;
@@ -154,6 +159,10 @@
   .my-advantages {
     gap: 136px;
     margin-top: 80px;
+    padding-left: 208px;
   }
 
+  .info {
+    background-position: right 4% bottom 25%;
+  }
 }
