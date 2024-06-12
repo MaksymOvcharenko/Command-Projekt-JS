@@ -1,26 +1,27 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
-// Default options
-new Accordion('.container-first');
 
-// User options
-new Accordion('.container-second', {
-  duration: 400,
-  showMultiple: true,
-  onOpen: function (currentElement) {
-    console.log(currentElement);
-  },
-});
-
-// Define several accordions with the same options (pass an array with selectors)
-new Accordion(['.container-first', '.container-second'], {});
-
-// or pass an array with HTMLElements
+new Accordion(accordions, {});
 const accordions = Array.from(
   document.querySelectorAll('.accordion-container')
 );
-new Accordion(accordions, {});
 
-// Detach events
-const accordion = new Accordion('.container-first');
-accordion.detachEvents();
+// Ініціалізація акордеону для знайдених елементів
+accordions.forEach(container => {
+  const triggers = container.querySelectorAll('.ac-trigger');
+  triggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const panel = trigger.closest('.ac').querySelector('.ac-panel');
+      if (panel.style.display === 'block') {
+        panel.style.display = 'none';
+      } else {
+        // Закриває всі інші панелі в цьому акордеоні
+        container
+          .querySelectorAll('.ac-panel')
+          .forEach(p => (p.style.display = 'none'));
+        panel.style.display = 'block';
+      }
+      console.log('Opened:', panel);
+    });
+  });
+});
