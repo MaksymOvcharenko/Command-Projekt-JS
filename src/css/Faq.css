@@ -33,8 +33,18 @@
     text-transform: uppercase;
   }
 
-  .ac-panel {
-    display: none;
-    overflow: hidden;
+  .ac .ac-trigger::after {
+    content: '<' rotate(90deg) !important;
+    text-align: center;
+    width: 15px;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    /* transform: rotate(0, -50%) rotate(90deg) !important; */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+  }
+  .ac.is-active > .ac-header .ac-trigger::after {
+    content: '>' !important;
   }
 }
