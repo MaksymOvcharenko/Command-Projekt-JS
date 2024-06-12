@@ -64,7 +64,7 @@
   width: 4px;
   height: 4px;
   background: #00b068;
-  transform: rotate(-180deg);
+  /* transform: rotate(-180deg); */
   /* transform: translateY(-50%); */
 }
 
@@ -95,7 +95,7 @@
   }
 
   .about-me-img {
-    padding-top: 408px;
+    margin-top: 408px;
     width: 336px;
     height: 392px;
   }
@@ -126,13 +126,20 @@
   }
 
   .about-me-container {
-    gap: 136px 0;
+    /* gap: 136px 0; */
+    padding-left: 208px;
   }
 
   .about-me-img {
-    padding-top: 312px;
+    margin-top: 280px;
     width: 384px;
     height: 448px;
+    border: 1px solid #000;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .my-bio {
+    align-self: start;
   }
 
   .my-advantages {
