@@ -95,7 +95,7 @@
   }
 
   .about-me-img {
-    margin-top: 408px;
+    /* margin-top: 408px; */
     width: 336px;
     height: 392px;
   }
@@ -111,6 +111,14 @@
   .my-education,
   .my-role {
     flex: 1 1 50%;
+  }
+
+  .my-img {
+    align-self: flex-end;
+  }
+
+  .my-bio {
+    padding-bottom: 80px;
   }
 
   .my-advantages {
@@ -136,6 +144,7 @@
     height: 448px;
     border: 1px solid #000;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
   }
 
   .my-bio {
