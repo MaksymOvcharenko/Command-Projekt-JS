@@ -4,7 +4,7 @@
     background-size: cover;
     padding-top: 112px;
   }
-  .container {
+  .heros .container {
   }
   .hero-title {
     font-family: 'Impact', sans-serif;
@@ -19,7 +19,7 @@
     display: none;
   }
   .greentext {
-    color: #00b068;
+    color: var(--accet-green);
   }
   .hero-link {
   }
@@ -133,8 +133,8 @@
     display: block;
     flex-shrink: 0;
   }
-  .container {
-    width: 1216px;
+  .heros .container {
+    /* width: 1216px; */
   }
   .hero-title {
     /* display: flex;

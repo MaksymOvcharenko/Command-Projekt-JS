@@ -93,7 +93,7 @@ input:checked + .slider:before {
   }
 }
 @media screen and (min-width: 360px) {
-  .container {
+  .headers .container {
     width: 360px;
   }
 }
@@ -102,7 +102,7 @@ input:checked + .slider:before {
   .headers {
     justify-content: space-between;
   }
-  .container {
+  .header .container {
     width: 704px;
     padding-left: 32px;
     padding-right: 32px;
@@ -128,7 +128,7 @@ input:checked + .slider:before {
   }
 }
 @media screen and (min-width: 1280px) {
-  .container {
+  .headers .container {
     max-width: 1280px;
     padding-left: 100px;
     padding-right: 100px;
