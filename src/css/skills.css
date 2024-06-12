@@ -1,3 +1,45 @@
-.SkillsTest {
+/* .SkillsTest {
   background: #a9ba5b;
+} */
+
+/* .visually-hidden {
+  background-color: #e4e5e6;
+} */
+
+.skillstech {
+  position: relative;
+  margin-left: 50px;
+  display: flex;
+}
+
+.skillstech-marquee-inner {
+  display: inline-flex;
+  transform: rotate(2deg);
+  padding: 40px 0px;
+  align-items: center;
+  gap: 16px;
+  background: var(--Light-grey, #e4e5e6);
+}
+
+.skillstech-marquee-line {
+  /* content: ''; */
+  color: var(--Accet-green, #00b068);
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 125% */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }
