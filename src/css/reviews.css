@@ -1,5 +1,6 @@
 .review-section {
   padding: 40px 0;
+  position: relative;
 }
 
 .reviews-title {
@@ -26,6 +27,26 @@
   border: 1px solid rgba(41, 41, 41, 0.30);
   background-color: transparent;
   stroke: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), stroke 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swiper-btn:hover,
+.swiper-btn:focus {
+  background-color: var(--light-grey);
+}
+
+body.dark-theme .swiper-btn {
+  border-color: #2A2D32;
+  stroke: #f0f0f0;
+}
+
+body.dark-theme .swiper-btn:hover,
+body.dark-theme .swiper-btn:focus {
+  background-color: #383A3D;
 }
 
 .swiper {
@@ -48,8 +69,10 @@
   max-width: 360px;
   border-radius: 16px;
   height: 296px;
+}
 
-
+body.dark-theme .review-item {
+  background-color: #2A2D32;
 }
 
 .review-item p {
@@ -98,7 +121,40 @@
   pointer-events: none;
 }
 
+body.dark-theme .swiper-button-disabled {
+  stroke: #383A3D;
+}
+
+.review-section .loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #999696;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: none;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 45.285%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (min-width:768px) {
+  .review-section {
+    padding-top: 62px;
+    padding-bottom: 0;
+  }
+
   .reviews-title {
     font-size: 108px;
     line-height: 124px;
@@ -116,9 +172,18 @@
   .swiper-wrapper .swiper-slide {
     max-height: 224px;
   }
+
+  .review-section .loader {
+    left: 46.875%;
+    top: 65%;
+  }
 }
 
 @media screen and (min-width:1280px) {
+  .review-section {
+    padding-top: 82px;
+  }
+
   .reviews-title {
     margin-bottom: 80px;
   }
@@ -134,4 +199,14 @@
   .swiper-wrapper .swiper-slide {
     max-height: 268px;
   }
+
+  .swiper-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .review-section .loader {
+    left: 48.5586%;
+  }
+
 }
