@@ -18,3 +18,10 @@ export const renderReviews = (values, element) => {
         .join("");
     element.insertAdjacentHTML('beforeend', markup)
 }
+
+export const showLoader = (element) => {
+    element.style.display = "inline-block";
+}
+export const hideLoader = (element) => {
+    element.style.display = "none";
+}
