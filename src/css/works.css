@@ -1,6 +1,7 @@
 /* .WorksTest {
   background: #e2c81e;
 } */
+
 @media screen and (min-width: 0px) {
   .works {
     padding: 80px 0;
@@ -59,6 +60,7 @@
     height: 288px;
     gap: 32px;
   }
+
   .works-input-email {
     border-style: none;
     border-radius: 8px;
@@ -137,6 +139,13 @@ form {
 }
 
 @media screen and (min-width: 768px) {
+  .works.container {
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, center calc(100% - 54px);
+    background-size: auto, auto;
+    background-image: url('../img/works_tab_bg.png');
+    background-clip: padding-box;
+  }
   .works {
     padding: 124px 0;
   }
@@ -174,6 +183,10 @@ form {
 }
 
 @media screen and (min-width: 1280px) {
+  .works.container {
+    background-position: right top, center calc(100% - 54px);
+    background-image: url('../img/works_dekst_bg4.png');
+  }
   .works {
     padding: 164px 0;
   }
