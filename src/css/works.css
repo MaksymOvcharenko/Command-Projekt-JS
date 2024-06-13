@@ -147,7 +147,7 @@ form {
     background-clip: padding-box;
   }
   .works {
-    padding: 124px 0;
+    padding: 124px 32px;
   }
   .works-title {
     font-size: 108px;
