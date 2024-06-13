@@ -1,5 +1,6 @@
 import { getRequestApi } from "./api-request-reviews";
-import { renderReviews } from "./markup-reviews";
+import { renderReviews, showLoader, hideLoader } from "./markup-reviews";
+import { updateNavigationButtons } from "./updateNavBtns";
 import Swiper from 'swiper';
 import "swiper/swiper-bundle.css"
 import iziToast from "izitoast";
@@ -7,33 +8,8 @@ import "izitoast/dist/css/iziToast.min.css"
 const listEL = document.querySelector('.swiper-wrapper');
 const listWrapperEl = document.querySelector('.swiper')
 const errorMsgMarkup = `<p class="error-message ">Not Found!</p>`
-
-const updateNavigationButtons = (swiper) => {
-    const prevBtnEl = document.querySelector('.prev');
-    const nextBtnEl = document.querySelector('.next');
-    const breakpoint = swiper.currentBreakpoint || 'default';
-    let maxIndex;
-
-    if (breakpoint === '1280') {
-        maxIndex = 4;
-    } else {
-        maxIndex = 5;
-    }
-    if (swiper.activeIndex === 0) {
-        prevBtnEl.classList.add('swiper-button-disabled');
-        prevBtnEl.disabled = true;
-    } else {
-        prevBtnEl.classList.remove('swiper-button-disabled');
-        prevBtnEl.disabled = false;
-    }
-    if (swiper.activeIndex === maxIndex) {
-        nextBtnEl.classList.add('swiper-button-disabled');
-        nextBtnEl.disabled = true;
-    } else {
-        nextBtnEl.classList.remove('swiper-button-disabled');
-        nextBtnEl.disabled = false;
-    }
-}
+const reviewSection = document.querySelector('.review-section');
+const loaderEl = document.querySelector('.loader');
 
 const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
@@ -67,6 +43,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 const reviews = async () => {
+    showLoader(loaderEl)
     try {
         const result = await getRequestApi(listWrapperEl, errorMsgMarkup)
         renderReviews(result, listEL)
@@ -77,10 +54,25 @@ const reviews = async () => {
         iziToast.error({
             position: 'topRight'
         })
+    } finally {
+        hideLoader(loaderEl)
     }
 }
 
-reviews()
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            reviews();
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    root: null, 
+    threshold: 0.1 
+});
+
+observer.observe(reviewSection);
 
 swiper.on('slideChange', function() {
     updateNavigationButtons(this);
