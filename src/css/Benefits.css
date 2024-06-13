@@ -118,12 +118,28 @@
     max-width: 1280px;
     padding-left: 32px;
     padding-right: 32px;
-    background-image: url('../img/icon-decor-bg.svg');
+    /* background-image: url('../img/icon-decor-bg.svg');
     background-size: 36%;
     background-repeat: no-repeat;
     background-position-x: 75%;
-    background-position-y: 5%;
+    background-position-y: 5%; */
     padding-top: 112px;
+  }
+
+  .benefits-container {
+    position: relative;
+  }
+
+  .benefits-bg {
+    width: 526px;
+    height: 408px;
+    background-image: url('../img/decor-bg-benefits.svg');
+    z-index: -1;
+    position: absolute;
+    top: -20px;
+    right: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .benefits-title {
