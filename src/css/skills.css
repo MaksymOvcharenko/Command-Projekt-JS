@@ -2,38 +2,43 @@
   background: #a9ba5b;
 } */
 
-.visually-hidden {
-  /* background-color: var(--light-accent, #14c57c); */
-}
-
 .skillstech-container {
+  width: 360px;
+  height: 245px;
 }
 
-.skillstech-marquee-inner {
+.skillstech-ul {
   display: inline-flex;
   padding: 32px 0px;
-  align-items: center;
-  gap: 16px;
+  width: 1392px;
+  height: 104px;
   background: #bcdfd1;
 }
-.skillstech-marquee-line {
+
+.skillstech-list {
+  background: #e4e5e6;
+  transform: rotate(2deg);
+}
+
+.skillstech-list {
+  padding: 32px 0px;
+}
+.skillstech-li {
   color: var(--Black, #292929);
-  font-family: Poppins;
-  font-size: 32px;
-  font-style: normal;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  line-height: 40px; /* 125% */
-  letter-spacing: 0.5px;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
-.skillstech-marquee-content {
+.skillstech-text {
   color: var(--Accet-green, #00b068);
-  font-family: Poppins;
-  font-size: 32px;
-  font-style: normal;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  line-height: 40px; /* 125% */
-  letter-spacing: 0.5px;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
