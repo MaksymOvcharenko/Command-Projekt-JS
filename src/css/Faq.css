@@ -4,16 +4,24 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
-    padding: 0px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
     position: relative;
   }
 
   .headline {
-    width: 320px;
+    max-width: 320px;
+    font-family: Impact;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px; /* 123.077% */
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
   }
 
   .text-wrapper {
-    min-width: 320px;
     font-family: Impact;
     font-size: 52px;
     font-style: normal;
@@ -24,7 +32,6 @@
   }
 
   .greentext {
-    font-family: Impact;
     font-size: 52px;
     font-style: normal;
     font-weight: 400;
@@ -39,12 +46,26 @@
     justify-content: center;
   }
   .ac {
-    padding: 28px 24px;
     gap: 16px;
     margin-top: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+  }
+  /* .bg {
+    background-color: var(--accet-green);
+  } */
+  .ac-text {
+    color: var(--color-text);
+    /* Desktop-Tablet/body 1 */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.5px;
   }
   .ac-trigger {
-    color: var(--Black, #292929);
+    color: var(--color-text);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -53,20 +74,38 @@
     text-transform: uppercase;
   }
   .ac .ac-trigger {
-    /* border-radius: 16px;
-    transition: color 0.25s rgba(0, 176, 104, 0.2); */
+    font: bold 16px Poppins, sans-serif;
+    color: var(--color-text);
+    text-align: left;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    transition: color 0.25s ease;
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+    border: 0;
   }
+  .is-active {
+    background-color: var(--accet-green, transparent 20%);
+    border-radius: 16px;
+  }
+
   .ac .ac-trigger:focus {
-    /* border-radius: top 16px;
-    background-color: rgba(0, 176, 104, 0.2); */
+    color: var(--color-text);
   }
+
   .ac .ac-panel .ac-text {
-    /* border-radius: bottom 16px;
-    background-color: rgba(0, 176, 104, 0.2); */
+    font: 15px / 24px Poppins, sans-serif;
+    color: var(--color-text);
+    padding: 8px;
+    margin: 0;
   }
-  .ac .ac-trigger::after {
-    content: '<' !important;
+  .ac .ac-header .ac-trigger::after {
+    content: '<';
     text-align: center;
+    background-color: transparent;
     width: 15px;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -75,33 +114,55 @@
     top: 50%;
   }
   .ac.is-active > .ac-header .ac-trigger::after {
-    content: '>' !important;
+    content: '>';
   }
-
-  .accordion-container {
-    list-style: none;
+  .ac .ac-trigger::after {
+    content: '<';
+    text-align: center;
+    width: 15px;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    position: absolute;
+    right: 10px;
+    top: 50%;
   }
-  .ac {
+  .ac .ac-header .ac-trigger::after {
+    content: '>';
+    text-align: left;
+    background-color: transparent;
+    width: 15px;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0%, -50%);
+    position: absolute;
+    right: 10px;
+    top: 50%;
   }
-  .ac-header {
-    cursor: pointer;
-    border-radius: 16px;
-    background-color: rgba(0, 176, 104, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .FAQ {
+    gap: 60px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 124px;
   }
-  .ac-panel {
-    display: none;
-    padding: 10px;
+  .text-wrapper {
+    min-width: 592px;
+    color: var(--color-text);
+    /* Desktop-Tablet/caption */
+    font-size: 20px;
+    line-height: 32px; /* 160% */
+    letter-spacing: 0.5px;
   }
-  .ac-panel:first-child {
-    display: block;
-    background-color: rgba(0, 176, 104, 0.2);
-    border-radius: 16px;
+  .headline {
+    max-width: 592px;
   }
-  .ac-panel p {
-    background-color: rgba(0, 176, 104, 0.2);
+  .text-wrapper {
+    font-size: 108px;
+    line-height: 124px; /* 114.815% */
+    letter-spacing: 1.8px;
   }
-  .bg {
-    background-color: rgba(0, 176, 104, 0.2);
-    border-radius: 16px;
+  .greentext {
+    font-size: 108px;
+    line-height: 124px;
   }
 }
