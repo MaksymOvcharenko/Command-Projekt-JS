@@ -14,6 +14,7 @@
   line-height: 1.23em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .benefits-title-span {
@@ -81,6 +82,7 @@
     font-size: 108px;
     line-height: 1.14em;
     letter-spacing: 0.01em;
+    margin-bottom: 0;
   }
 
   .benefits-item:first-child {
@@ -118,11 +120,6 @@
     max-width: 1280px;
     padding-left: 32px;
     padding-right: 32px;
-    /* background-image: url('../img/icon-decor-bg.svg');
-    background-size: 36%;
-    background-repeat: no-repeat;
-    background-position-x: 75%;
-    background-position-y: 5%; */
     padding-top: 112px;
   }
 
@@ -146,6 +143,7 @@
     width: 681px;
     height: 372px;
     margin-bottom: -40px;
+    margin-bottom: 0;
   }
 
   .benefits-item:first-child {
