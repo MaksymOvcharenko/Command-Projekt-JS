@@ -86,7 +86,7 @@ visually-hidden {
   height: 8px;
   border-radius: 2px;
   left: 0;
-  background-color: rgb(var(--var-text-green));
+  background: #00b068;
   position: absolute;
 }
 
@@ -96,7 +96,7 @@ visually-hidden {
   height: 8px;
   border-radius: 2px;
   left: 0;
-  background-color: rgb(var(--var-text));
+  background: #292929;
   position: absolute;
 }
 
