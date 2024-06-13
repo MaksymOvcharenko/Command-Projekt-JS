@@ -1,3 +1,60 @@
-<div class="container">
-  <h1 class="WorksTest">Works</h1>
+<div class="works container">
+  <h2 class="works-title">
+    let's<span class="greentext"> work together</span>
+  </h2>
+  <div class="works-contents">
+    <div class="works-contacts">
+      <h4 class="works-text">
+        Contact me to transform your ideas into exceptional solutions.
+      </h4>
+
+      <ul class="works-contacts-list">
+        <li class="works-contacts-item">
+          <svg class="works-icon" width="24" height="24">
+            <use href="./img/icons.svg#icon-telefon"></use>
+          </svg>
+          <a class="addresss-link" href="tel:+380904567890" target="_blank"
+            >+38 090 456 78 90</a
+          >
+        </li>
+        <li class="works-contacts-item">
+          <svg class="works-icon" width="24" height="24">
+            <use href="./img/icons.svg#icon-e-mail"></use>
+          </svg>
+          <a class=" " href="mailto:lloydjefferson@gmail.com" target="_blank"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="works-contacts-item">
+          <svg class="works-icon" width="24" height="24">
+            <use href="./img/icons.svg#icon-map"></use>
+          </svg>
+          <a class="address-link" href="#" target="_blank">USA, New York</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="works-contacts-form" id="contactForm">
+      <form class="feedback-form" autocomplete="off">
+        <input
+          class="works-input-email"
+          type="email"
+          name="email"
+          placeholder="Your email*"
+          autofocus
+          required
+        />
+        <textarea
+          class="works-input-message"
+          id="messageInput"
+          name="message"
+          placeholder="Message"
+        ></textarea>
+        <button class="works-button" type="submit" id="sendMessageBtn">
+          Send message
+        </button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/works-contacts-form.js" type="module"></script>
 </div>
