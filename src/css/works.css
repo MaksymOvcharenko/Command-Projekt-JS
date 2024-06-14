@@ -4,7 +4,7 @@
 
 @media screen and (min-width: 0px) {
   .works {
-    padding: 80px 0;
+    padding: 80px 20px;
   }
   .works-icon {
     margin-right: 16px;
@@ -73,6 +73,7 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: rgba(41, 41, 41, 0.4);
+    text-indent: 16px;
   }
   .works-input-email::placeholder,
   .works-input-message::placeholder {
@@ -91,6 +92,7 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: rgba(41, 41, 41, 0.4);
+    text-indent: 16px;
   }
 
   .works-input-email:focus,
@@ -188,7 +190,7 @@ form {
     background-image: url('../img/works_dekst_bg4.png');
   }
   .works {
-    padding: 164px 0;
+    padding: 164px 32px;
   }
   .works-contents {
     display: flex;

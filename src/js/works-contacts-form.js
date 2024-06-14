@@ -37,8 +37,8 @@ function sendData(event) {
   } // перевіряємо чи  валідний email
   console.log({ email, message });
 
-  // localStorage.removeItem('feedback-form-state');
-  // form.reset();
+  localStorage.removeItem('feedback-form-state');
+  form.reset();
 
   fetch('/url-for-post-request', { // Відправляємо POST-запит на сервер, не знаю яке посилання
     method: 'POST',
