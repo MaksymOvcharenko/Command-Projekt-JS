@@ -20,7 +20,9 @@
     />
     
     <script type="module" crossorigin src="/Command-Projekt-JS/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Command-Projekt-JS/assets/index-c73c68a7.css">
+    <link rel="modulepreload" crossorigin href="/Command-Projekt-JS/assets/vendor-eea82d0a.js">
+    <link rel="stylesheet" href="/Command-Projekt-JS/assets/vendor-1fb87061.css">
+    <link rel="stylesheet" href="/Command-Projekt-JS/assets/index-e02aa529.css">
   </head>
 <body class="light-theme"></body>
     <section id="header">
@@ -109,19 +111,20 @@
 
     <section class="about-me">
     <div class="info container">
-        <h2 class="about-me-title">About
+        <h2 class="about-me-title animation">About
             <span class="about-me-title-span">me</span>
         </h2>
         <div class="about-me-container">
             <div class="my-img">
                 <img srcset="/Command-Projekt-JS/assets/about-me-img-ba152e67.jpg 1x, /Command-Projekt-JS/assets/about-me-img-2x-75169bb0.jpg 2x" src="/Command-Projekt-JS/assets/about-me-img-ba152e67.jpg"
-                    alt="my-picture" width="320" class="about-me-img">
+                    alt="my-picture" width="320" class="about-me-img animation">
             </div>
 
             <div class="my-bio">
-                <h3 class="info-title">BIO</h3>
+                <h3 class="info-title animation">BIO</h3>
 
-                <p class="about-me-txt">I'm Lloyd Jefferson, a talented programmer specializing in software development.
+                <p class="about-me-txt animation">I'm Lloyd Jefferson, a talented programmer specializing in software
+                    development.
                     My expertise spans various programming
                     languages and technologies, and I am dedicated to continually enhancing my skills. I thrive on
                     seeking unconventional
@@ -141,42 +144,45 @@
 
         <div class="my-advantages">
             <div class="my-education">
-                <h3 class="info-title">EDUCATION</h3>
+                <h3 class="info-title animation">EDUCATION</h3>
 
                 <ul class="about-me-list">
                     <li class="about-me-item">
-                        <p class="about-me-txt">2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+                        <p class="about-me-txt animation">2018 - 2019 / Frontend Development Diploma, GoIT IT School,
+                            New York
                         </p>
                     </li>
                     <li class="about-me-item">
-                        <p class="about-me-txt">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+                        <p class="about-me-txt animation">2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+                            School,
                             New
                             York</p>
                     </li>
                     <li class="about-me-item">
-                        <p class="about-me-txt">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+                        <p class="about-me-txt animation">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
                     </li>
                 </ul>
             </div>
 
             <div class="my-role">
-                <h3 class="info-title">ROLE</h3>
+                <h3 class="info-title animation">ROLE</h3>
                 <ul class="about-me-list">
                     <li class="about-me-item">
-                        <p class="about-me-txt">Frontend development</p>
+                        <p class="about-me-txt animation">Frontend development</p>
                     </li>
                     <li class="about-me-item">
-                        <p class="about-me-txt">HeadlessCMS, Wordpress</p>
+                        <p class="about-me-txt animation">HeadlessCMS, Wordpress</p>
                     </li>
                     <li class="about-me-item">
-                        <p class="about-me-txt">Blender (enjoy)</p>
+                        <p class="about-me-txt animation">Blender (enjoy)</p>
                     </li>
                 </ul>
             </div>
         </div>
-
+        
     </div>
 </section>
+
     <section id="skillstech" class="skillstech">
   <div class="skillstech-container">
     <h2 class="visually-hidden">Tech Skills</h2>
@@ -375,9 +381,31 @@
   <h1 class="FaqTest">Faq</h1>
 </div>
 
-    <div class="container">
-  <h1 class="ReviewsTest">Reviews</h1>
-</div>
+    <section class="review-section" style="box-sizing: border-box;">
+  <div class="container">
+    <h2 class="reviews-title">Reviews</h2>
+    <span class="loader"></span>
+    <div class="swiper">
+      <ul class="swiper-wrapper">
+      </ul>
+      <div class="btns-reviews">
+        <button type="button" class="swiper-btn prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M20 12H4.00001" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10 18L4 12L10 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button type="button" class="swiper-btn next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M4 12H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M14 6L20 12L14 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <div class="works container">
   <h2 class="works-title">
