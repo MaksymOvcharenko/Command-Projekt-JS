@@ -9,7 +9,9 @@ form.addEventListener('submit', sendData);// обробник події від�
 function handleInput(event) {
   const key = event.target.name;
   formData[key] = event.target.value;
+  
 }
+
 // оновлення значення обєкту при введенні даних в форму
 
 function fillText() {
