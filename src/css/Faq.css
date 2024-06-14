@@ -1,11 +1,10 @@
 @media screen and (min-width: 0px) {
   .FAQ {
-    display: inline-flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     align-items: flex-start;
-    gap: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+
+    padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
   }
@@ -13,8 +12,8 @@
   .headline {
     max-width: 320px;
     font-family: Impact;
+    margin-bottom: 40px;
     font-size: 52px;
-    font-style: normal;
     font-weight: 400;
     line-height: 64px; /* 123.077% */
     letter-spacing: 1.8px;
@@ -24,7 +23,6 @@
   .text-wrapper {
     font-family: Impact;
     font-size: 52px;
-    font-style: normal;
     font-weight: 400;
     line-height: 64px; /* 123.077% */
     letter-spacing: 1.8px;
@@ -33,21 +31,21 @@
 
   .greentext {
     font-size: 52px;
-    font-style: normal;
     font-weight: 400;
     line-height: 64px;
     letter-spacing: 1.8px;
     text-transform: uppercase;
   }
   .accordion-container {
-    display: flex;
-    flex-direction: column;
-    padding: 28px 24px;
+    /* display: flex;
+    flex-direction: column; */
     justify-content: center;
   }
   .ac {
-    gap: 16px;
+    max-width: 272px;
+    padding: 28px 24px;
     margin-top: 0px;
+    border: none;
     background-color: transparent;
     border-bottom: 1px solid #ccc;
   }
@@ -59,7 +57,6 @@
     /* Desktop-Tablet/body 1 */
     font-family: Poppins;
     font-size: 16px;
-    font-style: normal;
     font-weight: 300;
     line-height: 24px; /* 150% */
     letter-spacing: 0.5px;
@@ -87,10 +84,6 @@
     margin: 0;
     border: 0;
   }
-  .is-active {
-    background-color: var(--accet-green, transparent 20%);
-    border-radius: 16px;
-  }
 
   .ac .ac-trigger:focus {
     color: var(--color-text);
@@ -102,7 +95,7 @@
     padding: 8px;
     margin: 0;
   }
-  .ac .ac-header .ac-trigger::after {
+  /* .ac .ac-header .ac-trigger::after {
     content: '<';
     text-align: center;
     background-color: transparent;
@@ -112,12 +105,13 @@
     position: absolute;
     right: 10px;
     top: 50%;
-  }
-  .ac.is-active > .ac-header .ac-trigger::after {
+  } */
+
+  /* .ac.is-active > .ac-header .ac-trigger::after {
     content: '>';
-  }
+  } */
   .ac .ac-trigger::after {
-    content: '<';
+    content: url(../img/faq.png);
     text-align: center;
     width: 15px;
     -webkit-transform: translate(0, -50%);
@@ -126,8 +120,19 @@
     right: 10px;
     top: 50%;
   }
+  /* .ac .ac-header .ac-trigger::after {
+    content: '<';
+    text-align: left;
+    background-color: transparent;
+    width: 15px;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0%, -50%);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+  } */
   .ac .ac-header .ac-trigger::after {
-    content: '>';
+    content: url(../img/faq.png);
     text-align: left;
     background-color: transparent;
     width: 15px;
@@ -137,26 +142,27 @@
     right: 10px;
     top: 50%;
   }
+  .ac.is-active > .ac-header .ac-trigger::after {
+    content: url(../img/faq2.png);
+  }
+  .is-active {
+    background-color: rgba(0, 176, 104, 0.2);
+    border-radius: 16px;
+  }
 }
 @media screen and (min-width: 768px) {
   .FAQ {
-    gap: 60px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-top: 124px;
     padding-bottom: 124px;
   }
-  .text-wrapper {
-    min-width: 592px;
-    color: var(--color-text);
-    /* Desktop-Tablet/caption */
-    font-size: 20px;
-    line-height: 32px; /* 160% */
-    letter-spacing: 0.5px;
-  }
+
   .headline {
     max-width: 592px;
+    margin-bottom: 60px;
   }
   .text-wrapper {
+    color: var(--color-text);
+    /* Desktop-Tablet/caption */
     font-size: 108px;
     line-height: 124px; /* 114.815% */
     letter-spacing: 1.8px;
@@ -164,6 +170,9 @@
   .greentext {
     font-size: 108px;
     line-height: 124px;
+  }
+  .ac {
+    max-width: 704px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -175,9 +184,19 @@
     background-position: left 2% bottom 33%;
   }
   .FAQ {
-    display: flex;
+    padding-top: 164px;
     padding-bottom: 164px;
-    flex-direction: column;
-    align-items: flex-star;
+  }
+  .headline {
+    max-width: 520px;
+  }
+  .accordion-container {
+    /* display: flex;
+    flex-direction: column; */
+    align-items: right;
+    max-width: 592px;
+  }
+  .ac {
+    max-width: 592px;
   }
 }

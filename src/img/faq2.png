@@ -1,0 +1,28 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#838383"/>
+<g id="Portfolio - desktop" clip-path="url(#clip0_0_1)">
+<rect width="1280" height="9406" transform="translate(-1196 -7430)" fill="#F0F0F0"/>
+<g id="FAQ">
+<g id="content">
+<g id="Questions">
+<g id="05">
+<mask id="path-1-inside-1_0_1" fill="white">
+<path d="M-540 -32H52V56H-540V-32Z"/>
+</mask>
+<path d="M52 55H-540V57H52V55Z" fill="#CCCCCC" mask="url(#path-1-inside-1_0_1)"/>
+<g id="Button">
+<g id="Icon">
+<path id="Vector 9" d="M18 9L12 15L6 9" stroke="#292929" stroke-width="2" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1280" height="9406" fill="white" transform="translate(-1196 -7430)"/>
+</clipPath>
+</defs>
+</svg>
