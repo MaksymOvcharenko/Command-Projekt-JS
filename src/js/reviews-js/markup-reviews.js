@@ -1,3 +1,6 @@
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css"
+
 export const renderReviews = (values, element) => {
     if (!values) {
         return
@@ -24,4 +27,12 @@ export const showLoader = (element) => {
 }
 export const hideLoader = (element) => {
     element.style.display = "none";
+}
+
+export const showIziToast = () => {
+    iziToast.error({
+        position: 'bottomRight',
+        id: 'toast',
+        message:'Reviews are not found. Try again!',
+    })
 }

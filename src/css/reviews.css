@@ -1,5 +1,5 @@
 .review-section {
-  padding: 40px 0;
+  padding-top: 40px;
   position: relative;
 }
 
@@ -147,6 +147,13 @@ body.dark-theme .swiper-button-disabled {
   100% {
     transform: rotate(360deg);
   }
+}
+
+#toast {
+  background-color: #DE4F69;
+  font-family: 'Popins';
+  font-size: 16px;
+  max-width: 290px;
 }
 
 @media screen and (min-width:768px) {

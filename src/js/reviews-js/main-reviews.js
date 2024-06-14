@@ -1,5 +1,5 @@
 import { getRequestApi } from "./api-request-reviews";
-import { renderReviews, showLoader, hideLoader } from "./markup-reviews";
+import { renderReviews, showLoader, hideLoader, showIziToast } from "./markup-reviews";
 import { updateNavigationButtons } from "./updateNavBtns";
 import Swiper from 'swiper';
 import "swiper/swiper-bundle.css"
@@ -51,9 +51,7 @@ const reviews = async () => {
         document.querySelector('.next').addEventListener('click', () => swiper.slideNext());
         document.querySelector('.prev').addEventListener('click', () => swiper.slidePrev());
     } catch (error) {
-        iziToast.error({
-            position: 'topRight'
-        })
+        showIziToast()
     } finally {
         hideLoader(loaderEl)
     }
