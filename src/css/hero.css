@@ -1,9 +1,13 @@
 @media screen and (min-width: 0px) {
   .hero {
-    background-image: url('../img/icon-decor-bg.svg');
-    margin-top: 112px;
   }
-  .heros .container {
+  .heros {
+    background-image: url('../img/Hero-bg1.png'), url('../img/Hero-bg2.png');
+    padding-top: 112px;
+    /* background-clip: padding-box; */
+    background-repeat: no-repeat, no-repeat;
+    margin: 0 auto;
+    background-position: right 21px top 27px, right 24px bottom 30px;
   }
   .hero-title {
     font-family: 'Impact', sans-serif;
@@ -104,19 +108,18 @@
 }
 @media screen and (min-width: 768px) {
   .heros {
-    width: 704px;
-    /* background-image: url('../img/bg-tablet.png'); */
+    padding-top: 88px;
+    /* width: 704px; */
 
-    /* background-size: cover; */
     background-repeat: no-repeat, no-repeat;
-    background-position: right top, center calc(100% - 54px);
+    background-position: right top 16px, right 184px bottom -10px;
     background-size: auto, auto;
-    background-image: url('../img/icon-decor-bg.svg'),
-      url('../img/icon-decor-bg.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-image: url('../img/hero-tablet-bg.png'),
+      url('../img/hero-tablet-bg.png');
     background-clip: padding-box;
   }
   .hero {
-    padding-top: 72px;
   }
   .hero-title {
     font-weight: 400;
@@ -142,15 +145,45 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .heros {
+    padding-top: 88px;
+    /* width: 704px; */
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 32px top 18px, left 150px bottom -16px;
+    background-size: auto, auto;
+    background-repeat: no-repeat, no-repeat;
+    background-image: url('../img/decorhero-desktop-bg.png'),
+      url('../img/decordesktop-down-hero-bg.png');
+    background-clip: padding-box;
+  }
   .hero-avatars {
     display: block;
     flex-shrink: 0;
+    border-radius: 34px;
   }
   .heros {
-    width: 1216px;
   }
   .hero-title {
-    /* display: flex;
-    flex-wrap: wrap; */
+    font-size: 124px;
+    line-height: 119%;
+    letter-spacing: 0.01em;
+    margin: 0;
+  }
+  .hero-title-container {
+    display: flex;
+  }
+  .hero-cont-desription {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .hero-description {
+    width: 592px;
+    margin: 0;
+  }
+  .hero-link-design {
+    padding-left: 72px;
   }
 }

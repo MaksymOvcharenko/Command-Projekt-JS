@@ -92,7 +92,6 @@ input:checked + .slider-mobile:before {
   display: flex;
   justify-content: space-between;
 
-  width: 320px;
   align-items: center;
 }
 .mobile-menu-btns {
@@ -108,7 +107,7 @@ input:checked + .slider-mobile:before {
   stroke: var(--color-text);
 }
 .mobile-bg {
-  width: 320px;
+  /* width: 320px; */
   margin-top: 16px;
   background-image: url('../img/icon-decor-bg.svg');
   background-size: cover;
@@ -116,7 +115,11 @@ input:checked + .slider-mobile:before {
 
 @media screen and (min-width: 360px) {
   .header-mobile {
-    width: 320px;
+    max-width: 360px;
     margin: 0 auto;
+  }
+  .mobile-bg {
+    margin: 0 auto;
+    width: 320px;
   }
 }

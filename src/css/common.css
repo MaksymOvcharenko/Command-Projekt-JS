@@ -12,6 +12,7 @@ body {
   --bg-color: #f0f0f0;
   --light-grey: #e4e5e6;
   --light-accent: #14c57c;
+  --bg-skills: #bcdfd1;
 }
 @font-face {
   font-family: 'Impact';
@@ -54,7 +55,7 @@ body {
 
 @media screen and (min-width: 360px) {
   .container {
-    max-width: 320px;
+    max-width: 360px;
   }
 }
 
