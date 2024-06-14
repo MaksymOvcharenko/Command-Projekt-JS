@@ -5,6 +5,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
   margin: 0;
 }
+
 :root {
   --color-text: #292929;
   --accet-green: #00b068;
@@ -53,7 +54,7 @@ body {
 
 @media screen and (min-width: 360px) {
   .container {
-    max-width: 320px;
+    max-width: 360px;
   }
 }
 

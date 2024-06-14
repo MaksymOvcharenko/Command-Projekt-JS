@@ -53,8 +53,8 @@ input:checked + .slider:before {
 
 @media screen and (min-width: 0px) {
   #header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .logo {
     font-family: 'Impact', sans-serif;
@@ -88,9 +88,6 @@ input:checked + .slider:before {
     background: transparent;
     border: none;
   }
-  .mobile-menu-icon {
-    /* fill: #292929; */
-  }
 }
 @media screen and (min-width: 360px) {
   .headers .container {
@@ -100,7 +97,6 @@ input:checked + .slider:before {
 
 @media screen and (min-width: 768px) {
   .headers {
-    justify-content: space-between;
   }
   .header .container {
     width: 704px;
@@ -132,5 +128,7 @@ input:checked + .slider:before {
     max-width: 1280px;
     padding-left: 100px;
     padding-right: 100px;
+  }
+  .headers {
   }
 }
