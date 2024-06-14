@@ -60,7 +60,7 @@ visually-hidden {
   flex-shrink: 0;
   display: flex;
   white-space: nowrap;
-  animation: skillsLine 10s linear infinite;
+  animation: skillsLine 20s linear infinite;
 }
 
 .skills-line-top,
