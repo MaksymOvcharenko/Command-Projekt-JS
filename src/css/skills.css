@@ -77,7 +77,7 @@ visually-hidden {
   color: rgb(var(--var-text));
 }
 .skills-line-bott {
-  color: #00b068;
+  color: rgb(var(--accet-green #00b068));
 }
 
 .skills-line-top::before {
