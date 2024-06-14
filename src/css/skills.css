@@ -41,7 +41,7 @@ visually-hidden {
 
 .skills-inner {
   display: flex;
-  background: #bcdfd1;
+  background: var(--bg-skills);
   position: absolute;
   top: 0;
   z-index: 2;
@@ -50,7 +50,7 @@ visually-hidden {
 
 .skills-accen {
   color: rgb(var(--var-text-green));
-  background: #e4e5e6;
+  background: var(--light-grey);
   transform: rotate(2deg) translateY(-25px) translateX(-10px);
   position: absolute;
   top: 130px;
@@ -77,7 +77,7 @@ visually-hidden {
   color: rgb(var(--var-text));
 }
 .skills-line-bott {
-  color: rgb(var(--accet-green #00b068));
+  color: var(--accet-green);
 }
 
 .skills-line-top::before {
@@ -86,7 +86,7 @@ visually-hidden {
   height: 8px;
   border-radius: 2px;
   left: 0;
-  background: #00b068;
+  background: var(--accet-green);
   position: absolute;
 }
 
@@ -134,4 +134,105 @@ visually-hidden {
   .skillstech-container {
     max-width: 1280px;
   }
+}
+
+visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.skillstech {
+  background-color: rgb(var(--var-bg));
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.skillstech-container {
+  max-width: 375px;
+  overflow: hidden;
+  width: 100%;
+  height: 245px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.skills-inner,
+.skills-accen {
+  display: flex;
+  padding: 32px 16px;
+}
+
+.skills-inner {
+  display: flex;
+  background: #bcdfd1;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.skills-accen {
+  color: rgb(var(--var-text-green));
+  background: #e4e5e6;
+  transform: rotate(2deg) translateY(-25px) translateX(-10px);
+  position: absolute;
+  top: 130px;
+  width: 103%;
+}
+
+.skills-list {
+  flex-shrink: 0;
+  display: flex;
+  white-space: nowrap;
+  animation: skillsLine 10s linear infinite;
+}
+
+.skills-line-top,
+.skills-line-bott {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 22px;
+}
+
+.skills-line-top {
+  color: rgb(var(--var-text));
+}
+
+.skills-line-bott {
+  color: #00b068;
+}
+
+.skills-line-top::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  left: 0;
+  background-color: rgb(var(--var-text-green));
+  position: absolute;
+}
+
+.skills-line-bott::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  left: 0;
 }
