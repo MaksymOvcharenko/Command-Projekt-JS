@@ -3,12 +3,12 @@
     align-items: flex-start;
 
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     position: relative;
   }
 
   .headline {
-    max-width: 320px;
+    /* max-width: 320px; */
     font-family: Impact;
     margin-bottom: 40px;
     font-size: 52px;
@@ -31,7 +31,7 @@
     justify-content: center;
   }
   .ac {
-    max-width: 272px;
+    width: 320px;
     padding: 28px 24px;
     margin-top: 0px;
     border: none;
@@ -112,7 +112,7 @@
 @media screen and (min-width: 768px) {
   .FAQ {
     padding-top: 124px;
-    padding-bottom: 124px;
+    padding-bottom: 62px;
   }
 
   .headline {
@@ -131,27 +131,30 @@
     line-height: 124px;
   }
   .ac {
-    max-width: 704px;
+    width: 704px;
   }
 }
 @media screen and (min-width: 1280px) {
+  .faq-body {
+    display: flex;
+    gap: 104px;
+  }
   .faq-bg {
     background-image: url(../img/decor-bg-4.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-clip: padding-box;
-    background-position: left 2% bottom 33%;
+    background-position: left bottom 82px;
   }
   .FAQ {
     padding-top: 164px;
-    padding-bottom: 164px;
+    padding-bottom: 82px;
   }
   .headline {
     max-width: 520px;
   }
   .accordion-container {
-    align-items: right;
-    max-width: 592px;
+    margin-top: 276px;
   }
   .ac {
     max-width: 592px;
