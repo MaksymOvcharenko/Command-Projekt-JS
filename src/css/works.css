@@ -48,6 +48,9 @@
     letter-spacing: 0.03em;
     color: var(--color-text);
   }
+  .addresss-link:hover {
+    color: var(--accet-green);
+  }
   form {
     display: flex;
     flex-direction: column;
