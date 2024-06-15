@@ -143,6 +143,9 @@
     position: absolute;
     /* top: 50px; */
   }
+  .invalid {
+    color: #e74a3b;
+  }
 }
 
 @media screen and (min-width: 360px) {

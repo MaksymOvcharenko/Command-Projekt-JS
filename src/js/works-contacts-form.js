@@ -1,7 +1,6 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-
 const formData = { email: '', message: '' };
 const form = document.querySelector('.feedback-form');
 const emailInput = document.querySelector('.works-input-email');
@@ -10,28 +9,23 @@ const formSupportingText = document.querySelector('.form-supporting-text');
 
 window.addEventListener('DOMContentLoaded', fillText);
 
-form.addEventListener('input', handleInput); // обробник події на  введення даних
+emailInput.addEventListener('input', handleEmailInput); // слухач подій для введення емейлу
+
 form.addEventListener('submit', sendData); // обробник події відправки форми
 
-function handleInput(event) {
-  const key = event.target.name;
-  formData[key] = event.target.value;
-  const email = event.target.value;
+function handleEmailInput(event) {
+  const email = event.target.value; // отримуємо значення емейлу з події
 
   if (validateEmail(email)) {
-    checkmark.style.display = 'block'; // показуємо галочку
+    checkmark.style.display = 'block'; // показуємо чекмарк
     emailInput.classList.remove('invalid');
-    formSupportingText.style.display = 'none'; //ховаємо червоний текст
+    formSupportingText.style.display = 'none'; // ховаємо текст підтримки
   } else {
-    if (formSupportingText.style.display !== 'block') {
-      checkmark.style.display = 'none'; // Ховаємо галочку
-    }
+    checkmark.style.display = 'none'; // ховаємо чекмарк
     emailInput.classList.add('invalid');
-    formSupportingText.style.display = 'block'; // Показуємо червоний текст
+    formSupportingText.style.display = 'block'; // показуємо текст підтримки
   }
-  
 }
-// оновлення значення обєкту при введенні даних в форму
 
 function fillText() {
   const data = JSON.parse(localStorage.getItem('feedback-form-state'));
@@ -39,11 +33,12 @@ function fillText() {
     const { email, message } = data;
     form.querySelector('[name="email"]').value = email;
     form.querySelector('[name="message"]').value = message;
+    handleEmailInput(); // перевірка валідності емейлу після заповнення форми
   }
-} //отримання даних  заповненої форми: мейлу та повідомлення
+}
 
 function sendData(event) {
-  event.preventDefault(); //зупиняємо стандартну відправку форми
+  event.preventDefault(); // зупиняємо стандартну відправку форми
 
   const email = form.querySelector('[name="email"]').value;
   const message = form.querySelector('[name="message"]').value;
@@ -51,7 +46,7 @@ function sendData(event) {
   if (!email || !message) {
     iziToast.error({ title: 'Error', message: 'Please fill in all fields' });
     return;
-  } // перевірили чи всі дані введені
+  } // перевіряємо чи всі дані введені
   if (!validateEmail(email)) {
     iziToast.error({
       title: 'Error',
@@ -61,7 +56,7 @@ function sendData(event) {
   }// перевіряємо чи  валідний email 
   
   form.querySelector('[name="email"]').value = '';
-  form.querySelector('[name="message"]').value = '';  // очистили поля вводу
+  form.querySelector('[name="message"]').value = '';  // очищаємо поля вводу
   checkmark.style.display = 'none';
   emailInput.classList.remove('invalid');
   formSupportingText.style.display = 'none'; // очищення стилів та текстів
@@ -98,11 +93,12 @@ function sendData(event) {
       }); // Показ повідомлення про помилку
     });
 }
+
 function validateEmail(email) {
   const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
   return pattern.test(email);
 }
 
 function showModal(type, message) {
-  // має показуватись модальне вікно з потрібним повідомленням
+  // функція для показу модального вікна
 }
