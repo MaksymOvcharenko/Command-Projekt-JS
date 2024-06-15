@@ -1,4 +1,4 @@
-/* :root {
+/* :root { 
 } */
 
 body {
@@ -12,6 +12,7 @@ body {
   --bg-color: #f0f0f0;
   --light-grey: #e4e5e6;
   --light-accent: #14c57c;
+  --bg-skills: #bcdfd1;
 }
 @font-face {
   font-family: 'Impact';
