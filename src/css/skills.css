@@ -14,8 +14,8 @@ visually-hidden {
 
 .skillstech {
   background-color: rgb(var(--var-bg));
-  display: flex;
   text-align: center;
+  display: flex;
   justify-content: center;
 }
 
