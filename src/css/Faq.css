@@ -1,7 +1,9 @@
 @media screen and (min-width: 0px) {
   .FAQ {
+    align-items: flex-start;
+
     padding-top: 80px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     position: relative;
   }
 
@@ -114,66 +116,70 @@
   .ac .ac-header .ac-trigger::after svg {
     stroke: var(--color-text);
     fill: var(--color-text);
-  }
+    .ac .ac-header .ac-trigger::after svg {
+      stroke: var(--color-text);
+      fill: var(--color-text);
+    }
 
-  .is-active {
-    background-color: rgba(0, 176, 104, 0.2);
-    border-radius: 16px;
+    .is-active {
+      background-color: rgba(0, 176, 104, 0.2);
+      border-radius: 16px;
+    }
   }
-}
-@media screen and (min-width: 768px) {
-  .FAQ {
-    padding-top: 124px;
-    padding-bottom: 62px;
-  }
+  @media screen and (min-width: 768px) {
+    .FAQ {
+      padding-top: 124px;
+      padding-bottom: 124px;
+    }
 
-  .headline {
-    max-width: 592px;
-    margin-bottom: 60px;
-  }
-  .text-wrapper {
-    color: var(--color-text);
+    .headline {
+      max-width: 592px;
+      margin-bottom: 60px;
+    }
+    .text-wrapper {
+      color: var(--color-text);
 
-    font-size: 108px;
-    line-height: 124px;
-    line-height: 124px;
-    letter-spacing: 1.8px;
-  }
-  /* .greentext {
+      font-size: 108px;
+      line-height: 124px;
+      line-height: 124px;
+      letter-spacing: 1.8px;
+    }
+    /* .greentext {
     
   } */
-  .question {
-    font-size: 108px;
-    line-height: 124px;
+    .question {
+      font-size: 108px;
+      line-height: 124px;
+    }
+    .ac {
+      max-width: 704px;
+    }
   }
-  .ac {
-    max-width: 704px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .faq-bg {
-    background-image: url(../img/decor-bg-4.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-clip: padding-box;
-    background-position: left 4% bottom 33%;
-  }
-  .FAQ {
-    padding-top: 164px;
-    padding-bottom: 82px;
-  }
-  .headline {
-    max-width: 520px;
-  }
-  .accordion-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 592px;
-    margin-left: 654px;
-    position: relative;
-    transform: translateY(-22.4%);
-  }
-  .ac {
-    max-width: 592px;
+  @media screen and (min-width: 1280px) {
+    .faq-bg {
+      background-image: url(../img/decor-bg-4.png);
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-clip: padding-box;
+      background-position: left 4% bottom 33%;
+    }
+    .FAQ {
+      padding-top: 164px;
+      padding-bottom: 164px;
+    }
+    .headline {
+      max-width: 520px;
+    }
+    .accordion-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 592px;
+      margin-left: 654px;
+      position: relative;
+      transform: translateY(-17%);
+    }
+    .ac {
+      max-width: 592px;
+    }
   }
 }
