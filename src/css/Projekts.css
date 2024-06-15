@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: antiquewhite;
+  background-color: white;
 }
 .projects-title {
 color: var(--Black, #292929);
