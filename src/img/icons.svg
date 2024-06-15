@@ -36,6 +36,9 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M24 8l-16 16"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M8 8l16 16"></path>
 </symbol>
+<symbol id="icon-Vector-Projects" viewBox="0 0 32 32">
+      <path fill="none" stroke="#00b068" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.556" d="M3.111 28.889 28.889 3.111m0 0h-24m24 0v24" style="stroke:var(--color1, #00b068)"/>
+    </symbol>
 <symbol id="icon-decor-bg" viewBox="0 0 15 32">
 <path fill="#00b068" style="fill: var(--color1, #00b068)" d="M13.089 27.511h-0.325c-0.025 0-0.045-0.020-0.045-0.045v-0.325c0-0.025 0.020-0.045 0.045-0.045h0.325c0.025 0 0.045 0.020 0.045 0.045v0.325c0 0.025-0.020 0.045-0.045 0.045z"></path>
 <path fill="#00b068" style="fill: var(--color1, #00b068)" d="M11.736 22.371h-0.325c-0.025 0-0.045-0.020-0.045-0.045v-0.325c0-0.025 0.020-0.045 0.045-0.045h0.325c0.025 0 0.045 0.020 0.045 0.045v0.325c0 0.025-0.020 0.045-0.045 0.045z"></path>
