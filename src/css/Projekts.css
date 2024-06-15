@@ -1,12 +1,10 @@
-.ProjetsTest {
-  background: #0dadc5;
-}
 .my-projects{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: antiquewhite;
 }
-.projects-title{
+.projects-title {
 color: var(--Black, #292929);
 font-family: Impact;
 font-size: 52px;
@@ -16,6 +14,10 @@ line-height: 64px;
 letter-spacing: 1.8px;
 text-transform: uppercase;
 margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .span-title{
@@ -40,10 +42,15 @@ margin-bottom: 40px;
 }
 .projects-img {
 border-radius: 16px;
-width: 320px;
+min-width: 320px;
 height: 184px;
 margin-bottom: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
+
+
 .div-projects-h-p {
 display: flex;
 flex-direction: column;
@@ -69,7 +76,7 @@ text-transform: uppercase;
 .projects-btn {
 width: 125px;
 height: 48px;
-padding: 12px 0;
+padding: 12px 24px;
 border-radius: 8px;
 background: var(--Light-grey, #E4E5E6);
 border: none;
@@ -85,13 +92,17 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin-left: auto;
+
 }
 .btn-projects-icon{
 margin-left: 12px;
+
 }
 .projects-btn:hover, 
 .projects-btn:focus {
 background: #BBB;
+transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), 
+background 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-load-more{
 width: 154px;
@@ -113,11 +124,13 @@ font-weight: 400;
 line-height: 28px; /* 155.556% */
 letter-spacing: 0.5px;
 text-transform: uppercase;
+transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+background 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-load-more::after {
 content: "";
 position: absolute;
-bottom: 8px; /* Відстань від нижнього краю кнопки */
+bottom: 8px;
 left: 50%;
 transform: translateX(-50%);
 width: 118px;
@@ -153,12 +166,13 @@ height: 404px;
 .projects-h {
 }
 .projects-p {
+/* Desktop-Tablet*/
 font-size: 36px;
 font-weight: 500;
 line-height: 48px; /* 133.333% */
 letter-spacing: 0.5px;
 }
-.projeckts-btn {
+.projects-btn {
 }
 .btn-load-more{
 width: 165px;
@@ -170,13 +184,13 @@ height: 56px;
 }
 .projects-li {
 }
-.projeckts-img {
-width: 1008px;
+.projects-img {
+min-width: 1008px;
 height: 578px;
 }
 .div-projects-h-p {
 }
-.projeckts-h {
+.projects-h {
 }
 .projects-p {
 }
