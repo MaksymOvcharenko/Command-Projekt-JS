@@ -1,23 +1,26 @@
-import project1 from '../img/projeсts/1.jpg';
-import project1Retina from '../img/projeсts/1-2x.jpg';
-import project2 from '../img/projeсts/2.jpg';
-import project2Retina from '../img/projeсts/2-2x.jpg';
-import project3 from '../img/projeсts/3.jpg';
-import project3Retina from '../img/projeсts/3-2x.jpg';
-import project4 from '../img/projeсts/4.jpg';
-import project4Retina from '../img/projeсts/4-2x.jpg';
-import project5 from '../img/projeсts/5.jpg'
-import project5Retina from '../img/projeсts/5-2x.jpg';
-import project6 from '../img/projeсts/6.jpg';
-import project6Retina from '../img/projeсts/6-2x.jpg';
-import project7 from '../img/projeсts/7.jpg';
-import project7Retina from '../img/projeсts/7-2x.jpg';
-import project8 from '../img/projeсts/8.jpg';
-import project8Retina from '../img/projeсts/8-2x.jpg';
-import project9 from '../img/projeсts/9.jpg';
-import project9Retina from '../img/projeсts/9-2x.jpg';
-import project10 from '../img/projeсts/10.jpg';
-import project10Retina from '../img/projeсts/10-2x.jpg';
+import project1 from '../img/projects/1.jpg';
+import project1Retina from '../img/projects/1-2x.jpg';
+import project2 from '../img/projects/2.jpg';
+import project2Retina from '../img/projects/2-2x.jpg';
+import project3 from '../img/projects/3.jpg';
+import project3Retina from '../img/projects/3-2x.jpg';
+import project4 from '../img/projects/4.jpg';
+import project4Retina from '../img/projects/4-2x.jpg';
+import project5 from '../img/projects/5.jpg'
+import project5Retina from '../img/projects/5-2x.jpg';
+import project6 from '../img/projects/6.jpg';
+import project6Retina from '../img/projects/6-2x.jpg';
+import project7 from '../img/projects/7.jpg';
+import project7Retina from '../img/projects/7-2x.jpg';
+import project8 from '../img/projects/8.jpg';
+import project8Retina from '../img/projects/8-2x.jpg';
+import project9 from '../img/projects/9.jpg';
+import project9Retina from '../img/projects/9-2x.jpg';
+import project10 from '../img/projects/10.jpg';
+import project10Retina from '../img/projects/10-2x.jpg';
+
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
 
 const projects = [
   {
@@ -124,17 +127,18 @@ function loadProjects() {
         width="320"
       />
       <div class="div-projects-h-p">
-        <h3 class="projects-h">${project.tech}</h3>
+        <h3 class="projects-sub">${project.tech}</h3>
         <p class="projects-p">${project.description}</p>
-        <a href="${project.link}" class="projects-btn">
+        <a href="${project.link}" class="visit-btn">
           VISIT
-          <svg class="btn-projects-icon" width="14" height="14">
+          <svg class="btn-visit-icon" width="14" height="14">
             <use href="./img/icons.svg#icon-Vector-Projects"></use>
           </svg>
         </a>
       </div>
     `;
 
+   
     projectsUl.appendChild(li);
   });
 
@@ -142,9 +146,14 @@ function loadProjects() {
 
   if (currentPage * projectsPerPage >= projects.length) {
     loadMoreBtn.style.display = 'none';
+    iziToast.info({
+      title: 'Info',
+      message: "That's all for now",
+      position: 'topCenter',
+      timeout: 3000
+    });
   }
 }
 
 loadMoreBtn.addEventListener('click', loadProjects);
-
-loadProjects()
+loadProjects();
