@@ -122,7 +122,7 @@
     background: #009156;
   }
   .checkmark {
-    /* display: none; */
+    display: none;
     position: absolute;
     width: 16px;
     height: 16px;
@@ -132,7 +132,7 @@
     /* right: 16px; */
   }
   .form-supporting-text {
-    /* display: none; */
+    display: none;
     color: #e74a3b;
     position: absolute;
     font-size: 12px;

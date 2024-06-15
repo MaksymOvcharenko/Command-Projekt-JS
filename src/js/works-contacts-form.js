@@ -1,10 +1,12 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+
 const formData = { email: '', message: '' };
 const form = document.querySelector('.feedback-form');
 const emailInput = document.querySelector('.works-input-email');
 const checkmark = document.querySelector('.checkmark');
+const formSupportingText = document.querySelector('.form-supporting-text');
 
 window.addEventListener('DOMContentLoaded', fillText);
 
@@ -15,13 +17,20 @@ function handleInput(event) {
   const key = event.target.name;
   formData[key] = event.target.value;
   const email = event.target.value;
-  if (validateEmail(emailInput.value)) {
-    checkmark.classList.remove('hidden');
-  } else {
-    checkmark.classList.add('hidden');
-  }
-}
 
+  if (validateEmail(email)) {
+    checkmark.style.display = 'block'; // показуємо галочку
+    emailInput.classList.remove('invalid');
+    formSupportingText.style.display = 'none'; //ховаємо червоний текст
+  } else {
+    if (formSupportingText.style.display !== 'block') {
+      checkmark.style.display = 'none'; // Ховаємо галочку
+    }
+    emailInput.classList.add('invalid');
+    formSupportingText.style.display = 'block'; // Показуємо червоний текст
+  }
+  
+}
 // оновлення значення обєкту при введенні даних в форму
 
 function fillText() {
@@ -49,13 +58,14 @@ function sendData(event) {
       message: 'Please enter a valid email address',
     });
     return;
-  }// перевіряємо чи  валідний email
-  if (emailPattern.test(emailInput.value)) {
-        checkmark.classList.remove('hidden');
-    } else {
-        checkmark.classList.add('hidden');
-    }
-  // console.log({ email, message });
+  }// перевіряємо чи  валідний email 
+  
+  form.querySelector('[name="email"]').value = '';
+  form.querySelector('[name="message"]').value = '';  // очистили поля вводу
+  checkmark.style.display = 'none';
+  emailInput.classList.remove('invalid');
+  formSupportingText.style.display = 'none'; // очищення стилів та текстів
+ 
 
   iziToast.info({ title: 'Info', message: 'Sending message...', close: false });
 
