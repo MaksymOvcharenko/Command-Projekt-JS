@@ -37,7 +37,7 @@ const projects = [
     alt: "mimino-website",
     tech: "React, JavaScript, Node JS, Git",
     description: "green harvest online store",
-    link: "#"
+    link: "https://boreddarkness.github.io/GreenHarvest/"
   },
   {
     imgSrc: project3,
@@ -129,7 +129,7 @@ function loadProjects() {
       <div class="div-projects-h-p">
         <h3 class="projects-sub">${project.tech}</h3>
         <p class="projects-p">${project.description}</p>
-        <a href="${project.link}" class="visit-btn">
+        <a href="${project.link}" class="visit-btn" target="_blank" rel="noopener noreferrer">
           VISIT
           <svg class="btn-visit-icon" width="14" height="14">
             <use href="./img/icons.svg#icon-Vector-Projects"></use>
