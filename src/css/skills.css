@@ -75,7 +75,6 @@ visually-hidden {
 .skills-line-top {
   color: rgb(var(--var-text));
 }
-
 .skills-line-bott {
   color: var(--accet-green);
 }
@@ -130,4 +129,4 @@ visually-hidden {
 }
 
 @media screen and (min-width: 1280px) {
-
+}
