@@ -13,7 +13,7 @@ window.addEventListener('click', event => {
 
 window.addEventListener('keydown', event => {
   if (event.code === 'Escape') {
-    return hideModal;
+    return hideModal();
   }
 });
 
