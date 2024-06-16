@@ -18,7 +18,7 @@ import project9 from '../img/projects/9.jpg';
 import project9Retina from '../img/projects/9-2x.jpg';
 import project10 from '../img/projects/10.jpg';
 import project10Retina from '../img/projects/10-2x.jpg';
-
+import svgArrow from '../img/icons.svg'
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
@@ -126,13 +126,13 @@ function loadProjects() {
         alt="${project.alt}"
         width="320"
       />
-      <div class="div-projects-h-p">
+      <div>
         <h3 class="projects-sub">${project.tech}</h3>
         <p class="projects-p">${project.description}</p>
         <a href="${project.link}" class="visit-btn" target="_blank" rel="noopener noreferrer">
           VISIT
-          <svg class="btn-visit-icon" width="14" height="14">
-            <use href="./img/icons.svg#icon-Vector-Projects"></use>
+          <svg class="btn-visit-icon" width="24" height="24">
+            <use href="${svgArrow}#icon-Vector-Projects"></use>
           </svg>
         </a>
       </div>
