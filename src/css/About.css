@@ -51,7 +51,8 @@
 
 .about-me-item {
   position: relative;
-  padding-left: 8px;
+  padding-left: 18px;
+  padding-bottom: 12px;
 }
 
 .about-me-item::before {
@@ -134,12 +135,16 @@
     margin-top: 60px;
   }
 
+  .about-me-item {
+    padding-bottom: 16px;
+  }
+
   .info {
     background-image: url(../img/about-me-decor-bg-2.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-clip: padding-box;
-    background-position: right 7% bottom 13%;
+    background-position: right 7% bottom 17%;
   }
 }
 
