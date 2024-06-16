@@ -1,6 +1,6 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import { showModal } from './modal';
+// import { showModal } from './modal';
 
 const formData = { email: '', message: '' };
 const form = document.querySelector('.feedback-form');

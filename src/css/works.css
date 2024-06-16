@@ -89,6 +89,7 @@
     letter-spacing: 0.03em;
     color: rgba(41, 41, 41, 0.4);
     text-indent: 16px;
+    resize: none;
   }
   .works-input-email:focus,
   .works-input-message:focus {
