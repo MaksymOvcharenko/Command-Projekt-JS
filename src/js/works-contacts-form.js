@@ -64,7 +64,7 @@ function sendData(event) {
 
   iziToast.info({ title: 'Info', message: 'Sending message...', close: false });
 
-  fetch('/url-for-post-request', {
+  fetch('./url-for-post-request', {
     // Відправляємо POST-запит на сервер, не знаю яке посилання
     method: 'POST',
     body: JSON.stringify({ email, message }), // Відправка даних у форматі JSON

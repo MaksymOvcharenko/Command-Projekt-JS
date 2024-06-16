@@ -51,7 +51,7 @@
   .addresss-link:hover {
     color: var(--accet-green);
   }
-  form {
+  .feedback-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +59,6 @@
     height: 288px;
     gap: 32px;
   }
-
   .works-input-email {
     border-style: none;
     border-radius: 8px;
@@ -73,13 +72,10 @@
     letter-spacing: 0.03em;
     color: rgba(41, 41, 41, 0.4);
     text-indent: 16px;
-    position: relative;
+    width: 100%;
+    padding-right: 30px;
+    box-sizing: border-box;
   }
-  .works-input-email::placeholder,
-  .works-input-message::placeholder {
-    padding: 0 16px;
-  }
-
   .works-input-message {
     border-radius: 8px;
     border-style: none;
@@ -94,7 +90,6 @@
     color: rgba(41, 41, 41, 0.4);
     text-indent: 16px;
   }
-
   .works-input-email:focus,
   .works-input-message:focus {
     color: #292929;
@@ -124,27 +119,30 @@
   .works-button:hover {
     background: #009156;
   }
+  .input-box {
+    position: relative;
+    display: inline-block;
+  }
   .checkmark {
     display: none;
     position: absolute;
     width: 16px;
     height: 16px;
     color: var(--accet-green);
-    border-radius: 50%;
-    /* top: 16px;
-    /* right: 16px; */
+    border-radius: 0%;
+    top: 16px;
+    right: 16px;
   }
+
   .form-supporting-text {
     display: none;
+    margin-top: 4px;
     color: #e74a3b;
-    position: absolute;
     font-size: 12px;
     font-style: normal;
     font-weight: 300;
     line-height: 1.33;
     letter-spacing: 0.041em;
-    position: absolute;
-    /* top: 50px; */
   }
   .invalid {
     color: #e74a3b;
@@ -153,7 +151,7 @@
 
 @media screen and (min-width: 360px) {
 }
-form {
+.feedback-form {
   width: 320px;
 }
 .works-input-email {
@@ -185,7 +183,6 @@ form {
     height: 248px;
     margin-bottom: 60px;
   }
-
   .works-contacts {
     margin-bottom: 65px;
   }
@@ -198,7 +195,6 @@ form {
     height: 19px;
     flex-direction: row;
   }
-
   .works-input-email {
     width: 704px;
   }
@@ -207,6 +203,9 @@ form {
   }
   .works-button {
     width: 173px;
+  }
+  .feedback-form {
+    width: 704px;
   }
 }
 
@@ -239,5 +238,8 @@ form {
   }
   .works-text {
     margin-bottom: 120px;
+  }
+  .feedback-form {
+    width: 592px;
   }
 }
