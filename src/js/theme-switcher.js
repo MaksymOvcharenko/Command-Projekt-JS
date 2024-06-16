@@ -13,6 +13,7 @@ export function initializeThemeSwitcher(themeToggle) {
 
   themeToggle.addEventListener('change', function () {
     if (themeToggle.checked) {
+      localStorage.setItem('theme', 'dark-theme');
       document.body.className = 'dark-theme';
       document.documentElement.style.setProperty('--accet-green', '#14c57c');
       document.documentElement.style.setProperty('--color-text', '#f0f0f0');
@@ -20,9 +21,9 @@ export function initializeThemeSwitcher(themeToggle) {
       document.documentElement.style.setProperty('--light-grey', '#2a2d32');
       document.documentElement.style.setProperty('--bg-skills', '#214136');
       document.themeToggleMobilePlace.classList.add('dark-theme-mobile');
-      localStorage.setItem('theme', 'dark-theme');
     } else {
       document.body.className = 'light-theme';
+      localStorage.setItem('theme', 'light-theme');
       document.documentElement.style.setProperty('--accet-green', '#00b068');
       document.documentElement.style.setProperty('--color-text', '#292929');
       document.documentElement.style.setProperty('--bg-color', '#f0f0f0');
@@ -30,7 +31,6 @@ export function initializeThemeSwitcher(themeToggle) {
       document.documentElement.style.setProperty('--bg-skills', '#bcdfd1');
 
       themeToggleMobilePlace.classList.remove('dark-theme-mobile');
-      localStorage.setItem('theme', 'light-theme');
     }
   });
 }
