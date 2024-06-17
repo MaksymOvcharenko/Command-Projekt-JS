@@ -73,7 +73,7 @@ function sendData(event) {
     });
     return;
   }
- checkmark.style.display = 'none'; // додала рядок, щоб забиралась галочка
+ checkmark.style.display = 'none'; 
   iziToast.info({ title: 'Info', message: 'Sending message...', close: false });
 
   fetch('https://portfolio-js.b.goit.study/api/requests', {
@@ -119,10 +119,10 @@ function showModal(type, message) {
     return;
   }
 
-  console.log('Opening modal with message:', message); // Debug message
+  console.log('Opening modal with message:', message); 
 
   modalMessage.textContent = message;
-  modalWindow.classList.add('is-open'); // Зміна: Додаємо клас 'is-open' до '.backdrop'
+  modalWindow.classList.add('is-open'); 
   console.log('Modal opened');
 }
 
