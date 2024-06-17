@@ -196,14 +196,15 @@
   }
 
   .benefits-item:hover {
-    transform: scale(1.35); /* Увеличиваем элемент при наведении */
-    z-index: 1; /* Поднимаем элемент над остальными */
+    transform: scale(1.35);
+    z-index: 1;
     background-color: #ffffff46;
     border-radius: 16px;
   }
 
   .benefits-list:hover .benefits-item:not(:hover) {
     opacity: 0.6;
-    filter: blur(2px);
+    filter: blur(1.3px);
+    transform: scale(0.95);
   }
 }
