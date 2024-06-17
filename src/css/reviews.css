@@ -57,7 +57,7 @@ body.dark-theme .swiper-btn:hover {
 }
 
 .swiper-wrapper .swiper-slide {
-  height: 438px;
+  height: 360px;
 }
 
 .review-item {
@@ -66,7 +66,13 @@ body.dark-theme .swiper-btn:hover {
   margin-bottom: 24px;
   max-width: 360px;
   border-radius: 16px;
-  height: 296px;
+
+}
+
+#item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 body.dark-theme .review-item {
@@ -154,6 +160,12 @@ body.dark-theme .swiper-button-disabled {
   max-width: 290px;
 }
 
+@media screen and (max-width: 359px) {
+  .swiper-wrapper .swiper-slide {
+    height: 430px;
+  }
+}
+
 @media screen and (min-width:768px) {
   .review-section {
     padding-top: 62px;
@@ -202,7 +214,7 @@ body.dark-theme .swiper-button-disabled {
   }
 
   .swiper-wrapper .swiper-slide {
-    max-height: 268px;
+    max-height: 244px;
   }
 
   .swiper-btn {
