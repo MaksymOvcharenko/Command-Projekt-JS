@@ -15,7 +15,7 @@ text-transform: uppercase;
 }
 
 .span-title{
-  color: var(--accent-green);
+  color: var(--accet-green);
 font-family: Impact;
 font-size: 52px;
 font-style: normal;
@@ -40,7 +40,7 @@ align-items: center;
 }
 .projects-img {
   width: 100%;
-  border-radius: 16px;
+  border-radius: 32px;
   margin-bottom: 12px;
   transition: transform 0.3s ease-in-out;
 }
