@@ -13,30 +13,33 @@
     margin-bottom: 40px;
     font-size: 52px;
     font-weight: 400;
-    line-height: 64px; /* 123.077% */
-    letter-spacing: 1.8px;
+    line-height: 1.23; /* 123.077% */
+    letter-spacing: 0.03em;
     text-transform: uppercase;
   }
 
   .text-wrapper {
-    font-family: Impact;
-    font-size: 52px;
-    font-weight: 400;
-    line-height: 64px; /* 123.077% */
-    letter-spacing: 1.8px;
-    text-transform: uppercase;
+    color: var(--color-text);
   }
 
   .accordion-container {
     justify-content: center;
   }
   .ac {
-    width: 320px;
+    width: 272px;
     padding: 28px 24px;
     margin-top: 0px;
     border: none;
     background-color: transparent;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--bg-skills);
+  }
+  .ac-header {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55; /* 155.556% */
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
   }
 
   .ac-text {
@@ -45,25 +48,24 @@
     font-family: Poppins;
     font-size: 16px;
     font-weight: 300;
-    line-height: 24px; /* 150% */
-    letter-spacing: 0.5px;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.03em;
   }
   .ac-trigger {
     color: var(--color-text);
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 28px; /* 155.556% */
-    letter-spacing: 0.5px;
+    line-height: 1.55; /* 155.556% */
+    letter-spacing: 0.03em;
     text-transform: uppercase;
   }
   .ac-trigger[aria-expanded='true']::after {
     transform: translateY(-50%) rotate(180deg) !important;
     transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    right: 10px !important;
+    right: 0px !important;
   }
   .ac .ac-trigger {
-    font: bold 16px Poppins, sans-serif;
+    font: 400 16px Poppins, sans-serif;
     color: var(--color-text);
     text-align: left;
     width: 100%;
@@ -79,10 +81,11 @@
 
   .ac .ac-trigger:focus {
     color: var(--color-text);
+    border: none;
   }
 
   .ac .ac-panel .ac-text {
-    font: 15px / 24px Poppins, sans-serif;
+    font: 16px / 24px Poppins, sans-serif;
     color: var(--color-text);
     padding: 8px;
     margin: 0;
@@ -90,14 +93,14 @@
 
   .ac .ac-header .ac-trigger::after {
     content: url(../img/faqnew.svg);
-    text-align: left;
+    /* text-align: left; */
     background-color: transparent;
     width: 15px;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0%, -50%);
+    -webkit-transform: translate(80%, -50%);
+    transform: translate(80%, -50%);
     position: absolute;
-    right: 10px;
-    top: 50%;
+    right: 12px;
+    top: 40%;
   }
   .ac .ac-header .ac-trigger::after svg {
     stroke: var(--color-text);
@@ -106,6 +109,7 @@
 
   .is-active {
     background-color: rgba(0, 176, 104, 0.2);
+    border: none;
     border-radius: 16px;
   }
 }
@@ -117,18 +121,21 @@
 
   .headline {
     max-width: 592px;
-    margin-bottom: 60px;
-  }
-  .text-wrapper {
-    color: var(--color-text);
-
     font-size: 108px;
-    line-height: 124px;
-    letter-spacing: 1.8px;
+    margin-bottom: 60px;
+    line-height: 1.15; /* 114.815% */
+    letter-spacing: 0.02em;
   }
 
   .ac {
-    width: 704px;
+    width: 656px;
+  }
+  .ac-header {
+    font-size: 20px;
+    line-height: 1.6; /* 160% */
+  }
+  .ac .ac-trigger {
+    font: 400 20px Poppins, sans-serif;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -154,6 +161,6 @@
     margin-top: 276px;
   }
   .ac {
-    max-width: 592px;
+    max-width: 544px;
   }
 }
