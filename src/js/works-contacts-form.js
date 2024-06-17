@@ -1,12 +1,13 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-// import { showModal } from './modal';
+// import { showModal } from './modal-popup.js';
 
 const formData = { email: '', message: '' };
 const form = document.querySelector('.feedback-form');
 const emailInput = document.querySelector('.works-input-email');
 const checkmark = document.querySelector('.checkmark');
 const formSupportingText = document.querySelector('.form-supporting-text');
+
 
 window.addEventListener('DOMContentLoaded', fillText);
 
@@ -63,8 +64,8 @@ function sendData(event) {
   formSupportingText.style.display = 'none'; 
 
   iziToast.info({ title: 'Info', message: 'Sending message...', close: false });
-
-  fetch('./url-for-post-request', {
+ 
+  fetch('https://portfolio-js.b.goit.study/api/requests', {
     method: 'POST',
     body: JSON.stringify({ email, message }),
     headers: {
@@ -90,9 +91,14 @@ function sendData(event) {
       }); 
     });
 }
-
 function validateEmail(email) {
   const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
   return pattern.test(email);
 }
+
+  function showModal(type, message) {
+  const modalWindow = document.querySelector('.modal');
+  modalWindow.classList.add('is-open');
+}
+
 

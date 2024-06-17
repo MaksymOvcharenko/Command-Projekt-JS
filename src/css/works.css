@@ -70,7 +70,7 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: rgba(41, 41, 41, 0.4);
+    color: var(--color-text);
     text-indent: 16px;
     width: 100%;
     padding-right: 30px;
@@ -87,13 +87,13 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: rgba(41, 41, 41, 0.4);
+    color: var(--color-text);
     text-indent: 16px;
     resize: none;
   }
   .works-input-email:focus,
   .works-input-message:focus {
-    color: #292929;
+    color: var(--color-text);
     background: var(--light-grey);
   }
   .works-input-email:focus,
