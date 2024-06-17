@@ -8,7 +8,7 @@
         Contact me to transform your ideas into exceptional solutions.
       </h4>
 
-      <ul class="works-contacts-list">
+      <ul class="works-contacts-list" id="contacts">
         <li class="works-contacts-item">
           <svg class="works-icon" width="24" height="24">
             <use href="./img/icons.svg#icon-telefon"></use>
@@ -21,7 +21,10 @@
           <svg class="works-icon" width="24" height="24">
             <use href="./img/icons.svg#icon-e-mail"></use>
           </svg>
-          <a class=" " href="mailto:lloydjefferson@gmail.com" target="_blank"
+          <a
+            class="addresss-link"
+            href="mailto:lloydjefferson@gmail.com"
+            target="_blank"
             >lloydjefferson@gmail.com</a
           >
         </li>
@@ -36,20 +39,28 @@
 
     <div class="works-contacts-form" id="contactForm">
       <form class="feedback-form" autocomplete="off">
-        <input
-          class="works-input-email"
-          type="email"
-          name="email"
-          placeholder="Your email*"
-          autofocus
-          required
-        />
+        <div class="input-box">
+          <input
+            class="works-input-email"
+            type="email"
+            name="email"
+            placeholder="Your email*"
+            required
+            id="email-text"
+          />
+          <label class="checkmark-label">
+            <img src="./img/ep_success-filled (1).png" class="checkmark" />
+          </label>
+          <div class="form-supporting-text">Invalid email, try again</div>
+        </div>
+
         <textarea
           class="works-input-message"
           id="messageInput"
           name="message"
           placeholder="Message"
         ></textarea>
+
         <button class="works-button" type="submit" id="sendMessageBtn">
           Send message
         </button>
