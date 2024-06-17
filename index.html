@@ -23,7 +23,7 @@
     <script type="module" crossorigin src="/Command-Projekt-JS/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/Command-Projekt-JS/assets/vendor-9cc690ff.js">
     <link rel="stylesheet" href="/Command-Projekt-JS/assets/vendor-1fb87061.css">
-    <link rel="stylesheet" href="/Command-Projekt-JS/assets/index-945a6633.css">
+    <link rel="stylesheet" href="/Command-Projekt-JS/assets/index-6dbfad9b.css">
   </head>
 <body class="light-theme"></body>
     <section id="header">
@@ -39,7 +39,7 @@
       <ul class="menu-list">
         <li class="menu-item"><a href="#aboutme">About me</a></li>
         <li class="menu-item"><a href="#projects">Projects</a></li>
-        <li class="menu-item"><a href="#">Contacts</a></li>
+        <li class="menu-item"><a href="#works">Contacts</a></li>
       </ul>
     </nav>
     <button type="button" class="mobile-menu-btn" data-mobile-open>
@@ -80,8 +80,8 @@
             fill="#00B068"
           />
         </svg>
-        <a link="" class="hero-design-link">Order the project</a>
-        <div class="hero-design-container"></div>
+        <a href="#projects"><p class="hero-design-link">Order the project <div class="hero-design-container"></div></p></a>
+       
       </div>
 
       <p class="hero-description">
@@ -95,16 +95,24 @@
   <div class="social-container">
     <ul class="social-list">
       <li class="social-item">
-        <a href="http://" class="social-link">Instagram</a>
+        <a href="http://instagram.com" class="social-link" target="_blank"
+          >Instagram</a
+        >
       </li>
       <li class="social-item">
-        <a href="http://" class="social-link">Facebook</a>
+        <a href="http://Facebook.com" class="social-link" target="_blank"
+          >Facebook</a
+        >
       </li>
       <li class="social-item">
-        <a href="http://" class="social-link">Linkedin</a>
+        <a href="http://Linkedin.com" class="social-link" target="_blank"
+          >Linkedin</a
+        >
       </li>
       <li class="social-item">
-        <a href="http://" class="social-link">GitHub</a>
+        <a href="http://GitHub.com" class="social-link" target="_blank"
+          >GitHub</a
+        >
       </li>
     </ul>
   </div>
@@ -535,77 +543,79 @@
   </div>
 </section>
 
-    <div class="works container">
-  <h2 class="works-title">
-    let's<span class="greentext"> work together</span>
-  </h2>
-  <div class="works-contents">
-    <div class="works-contacts">
-      <h4 class="works-text">
-        Contact me to transform your ideas into exceptional solutions.
-      </h4>
+    <section id="works">
+  <div class="works container">
+    <h2 class="works-title">
+      let's<span class="greentext"> work together</span>
+    </h2>
+    <div class="works-contents">
+      <div class="works-contacts">
+        <h4 class="works-text">
+          Contact me to transform your ideas into exceptional solutions.
+        </h4>
 
-      <ul class="works-contacts-list" id="contacts">
-        <li class="works-contacts-item">
-          <svg class="works-icon" width="24" height="24">
-            <use href="/Command-Projekt-JS/assets/icons-71aede43.svg#icon-telefon"></use>
-          </svg>
-          <a class="addresss-link" href="tel:+380904567890" target="_blank"
-            >+38 090 456 78 90</a
-          >
-        </li>
-        <li class="works-contacts-item">
-          <svg class="works-icon" width="24" height="24">
-            <use href="/Command-Projekt-JS/assets/icons-71aede43.svg#icon-e-mail"></use>
-          </svg>
-          <a
-            class="addresss-link"
-            href="mailto:lloydjefferson@gmail.com"
-            target="_blank"
-            >lloydjefferson@gmail.com</a
-          >
-        </li>
-        <li class="works-contacts-item">
-          <svg class="works-icon" width="24" height="24">
-            <use href="/Command-Projekt-JS/assets/icons-71aede43.svg#icon-map"></use>
-          </svg>
-          <a class="address-link" href="#" target="_blank">USA, New York</a>
-        </li>
-      </ul>
+        <ul class="works-contacts-list" id="contacts">
+          <li class="works-contacts-item">
+            <svg class="works-icon" width="24" height="24">
+              <use href="/Command-Projekt-JS/assets/icons-71aede43.svg#icon-telefon"></use>
+            </svg>
+            <a class="addresss-link" href="tel:+380904567890" target="_blank"
+              >+38 090 456 78 90</a
+            >
+          </li>
+          <li class="works-contacts-item">
+            <svg class="works-icon" width="24" height="24">
+              <use href="/Command-Projekt-JS/assets/icons-71aede43.svg#icon-e-mail"></use>
+            </svg>
+            <a
+              class="addresss-link"
+              href="mailto:lloydjefferson@gmail.com"
+              target="_blank"
+              >lloydjefferson@gmail.com</a
+            >
+          </li>
+          <li class="works-contacts-item">
+            <svg class="works-icon" width="24" height="24">
+              <use href="/Command-Projekt-JS/assets/icons-71aede43.svg#icon-map"></use>
+            </svg>
+            <a class="address-link" href="#" target="_blank">USA, New York</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="works-contacts-form" id="contactForm">
+        <form class="feedback-form" autocomplete="off">
+          <div class="input-box">
+            <input
+              class="works-input-email"
+              type="email"
+              name="email"
+              placeholder="Your email*"
+              required
+              id="email-text"
+            />
+            <label class="checkmark-label">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEsSURBVHgBrVM9TsMwFP5skMiYI4QTUAYkNtQToEyMzQadKCcAbuCtHduRqfQGPQASOYKPEDZPfbzYThqrsRqpfYvtF38/7/kFODHEQWY9SyHNKwgFnzJ/rQSo5Nwn8oWOE2ymE9BOcTpFv17lSObqkGDzzKpCYZBvUeBxvtoTrF8yCPqNK/c5ubpGrirpfbwPAGvuw7fbEt81s3onfWJ0FEwYs9B2bwKTern0p1GoZCMLwFI88NrtUdZxEMQWZG7tswVgWvbcbRxY1czvC8hEY2fGQJLGwVbAExBWrpHNN3wwSV2ajim74WpLMFwbVaEAk0TB5AaqJciXnBBvGBok25G+aJNfPyWe7v54oO7ZXhJXFlMGL5pMz8/EUwm2L+im87za9gmJqqcP54x/ujRr3AxNAzQAAAAASUVORK5CYII=" class="checkmark" />
+            </label>
+            <div class="form-supporting-text">Invalid email, try again</div>
+          </div>
+
+          <textarea
+            class="works-input-message"
+            id="messageInput"
+            name="message"
+            placeholder="Message"
+          ></textarea>
+
+          <button class="works-button" type="submit" id="sendMessageBtn">
+            Send message
+          </button>
+        </form>
+      </div>
     </div>
-
-    <div class="works-contacts-form" id="contactForm">
-      <form class="feedback-form" autocomplete="off">
-        <div class="input-box">
-          <input
-            class="works-input-email"
-            type="email"
-            name="email"
-            placeholder="Your email*"
-            required
-            id="email-text"
-          />
-          <label class="checkmark-label">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEsSURBVHgBrVM9TsMwFP5skMiYI4QTUAYkNtQToEyMzQadKCcAbuCtHduRqfQGPQASOYKPEDZPfbzYThqrsRqpfYvtF38/7/kFODHEQWY9SyHNKwgFnzJ/rQSo5Nwn8oWOE2ymE9BOcTpFv17lSObqkGDzzKpCYZBvUeBxvtoTrF8yCPqNK/c5ubpGrirpfbwPAGvuw7fbEt81s3onfWJ0FEwYs9B2bwKTern0p1GoZCMLwFI88NrtUdZxEMQWZG7tswVgWvbcbRxY1czvC8hEY2fGQJLGwVbAExBWrpHNN3wwSV2ajim74WpLMFwbVaEAk0TB5AaqJciXnBBvGBok25G+aJNfPyWe7v54oO7ZXhJXFlMGL5pMz8/EUwm2L+im87za9gmJqqcP54x/ujRr3AxNAzQAAAAASUVORK5CYII=" class="checkmark" />
-          </label>
-          <div class="form-supporting-text">Invalid email, try again</div>
-        </div>
-
-        <textarea
-          class="works-input-message"
-          id="messageInput"
-          name="message"
-          placeholder="Message"
-        ></textarea>
-
-        <button class="works-button" type="submit" id="sendMessageBtn">
-          Send message
-        </button>
-      </form>
-    </div>
+    
   </div>
-  
-</div>
+</section>
 
     
   <footer class="footer">
