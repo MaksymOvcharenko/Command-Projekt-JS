@@ -80,7 +80,7 @@
     background: rgba(0, 176, 104, 0.2);
     border-radius: 16px;
     width: 165px;
-    height: 92px;
+    height: 90px;
     overflow: hidden;
   }
   .social-container {
@@ -136,7 +136,7 @@
   .hero-design-container {
     border-radius: 16px;
     width: 264px;
-    height: 96px;
+
     right: 10px;
   }
   .hero-description {
