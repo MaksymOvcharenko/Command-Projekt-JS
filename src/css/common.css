@@ -80,3 +80,7 @@ body {
 a {
   transition: all 155ms ease-in-out;
 }
+img:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s;
+}
