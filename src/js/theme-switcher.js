@@ -14,7 +14,6 @@ export function initializeThemeSwitcher(themeToggle) {
       applyLightThemeStyles();
     }
   } else {
-    // Якщо немає збереженої теми, застосуємо світлу тему за замовчуванням
     applyLightThemeStyles();
   }
 
@@ -34,7 +33,6 @@ export function initializeThemeSwitcher(themeToggle) {
 }
 
 function applyDarkThemeStyles() {
-  console.log('Applying dark theme styles');
   document.documentElement.style.setProperty('--accet-green', '#14c57c');
   document.documentElement.style.setProperty('--color-text', '#f0f0f0');
   document.documentElement.style.setProperty('--bg-color', '#292929');
@@ -43,7 +41,6 @@ function applyDarkThemeStyles() {
 }
 
 function applyLightThemeStyles() {
-  console.log('Applying light theme styles');
   document.documentElement.style.setProperty('--accet-green', '#00b068');
   document.documentElement.style.setProperty('--color-text', '#292929');
   document.documentElement.style.setProperty('--bg-color', '#f0f0f0');
@@ -52,7 +49,6 @@ function applyLightThemeStyles() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  console.log('Initializing theme switcher');
   initializeThemeSwitcher(themeToggle);
   initializeThemeSwitcher(themeToggleMobile);
 });
