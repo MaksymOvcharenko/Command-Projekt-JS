@@ -19,11 +19,9 @@ import project9Retina from '../img/projects/9-2x.jpg';
 import project10 from '../img/projects/10.jpg';
 import project10Retina from '../img/projects/10-2x.jpg';
 
-import svgArrow from '../img/icons.svg'
-import iziToast from "izitoast";
-import "izitoast/dist/css/iziToast.min.css";
-
-
+import svgArrow from '../img/icons.svg';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const projects = [
   {
@@ -47,7 +45,7 @@ const projects = [
     imgSrcSet: `${project3} 1x, ${project3Retina} 2x`,
     alt: 'vyshyvanka',
     tech: 'React, JavaScript, Node JS, Git',
-    description: 'English excellence webservice',
+    description: 'English exellence website',
     link: '#',
   },
   {
@@ -129,7 +127,7 @@ function loadProjects() {
         alt="${project.alt}"
         width="320"
       />
-      <div>
+      <div class="div-list">
         <h3 class="projects-sub">${project.tech}</h3>
         <p class="projects-p">${project.description}</p>
         <a href="${project.link}" class="visit-btn" target="_blank" rel="noopener noreferrer">
