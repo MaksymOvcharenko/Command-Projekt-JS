@@ -8,14 +8,11 @@ export const renderReviews = (values, element) => {
     const markup = values
         .map(value => {
             return `<li class="swiper-slide review-item" id="item">
-                        <div>
-                            <p>${value.review}</p>
-                            <div class="review-container">
-                                <img src="${value.avatar_url}"/>
-                                <h3>${value.author}</h3>
-                            </div>
+                        <p>${value.review}</p>
+                        <div class="review-container">
+                            <img src="${value.avatar_url}"/>
+                            <h3>${value.author}</h3>
                         </div>
-                        
                     </li>`
         })
         .join("");

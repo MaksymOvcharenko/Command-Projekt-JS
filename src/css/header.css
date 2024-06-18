@@ -50,7 +50,9 @@ input:checked + .slider:before {
   transform: translateX(100%);
   box-shadow: inset -8px 0px 0px 0px #00b068;
 }
-
+.menu-item:hover {
+  color: var(--accet-green);
+}
 @media screen and (min-width: 0px) {
   #header {
     padding-top: 20px;
@@ -65,7 +67,7 @@ input:checked + .slider:before {
     text-transform: uppercase;
   }
   .logo-green {
-    color: #00b068;
+    color: var(--accet-green);
   }
   .switch {
     display: none;

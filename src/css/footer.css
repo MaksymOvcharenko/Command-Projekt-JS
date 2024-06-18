@@ -3,7 +3,8 @@
   }
 
 .footer{
-  border-top: 1px solid rgb(228, 229, 230);
+  border-top: 1px solid var(--light-grey);
+  
 }
 
 .content-footer {
@@ -29,7 +30,7 @@
 .logo-span {
   font-size: 32px;
   font-weight: 400;
-  color: #00b068;
+  color: var(--accet-green);
 }
 
 .soc-links-footer {
@@ -42,7 +43,7 @@
 }
 
 .soc-link-footer {
-  color: #292929;
+  color: var(--color-text);
   font-family: Poppins;
   font-size: 16px;
   font-weight: 300;
@@ -52,7 +53,7 @@
 }
 
 .copyright {
-  color: #292929;
+  color: var(--color-text);
   font-family: Poppins;
   font-size: 16px;
   font-weight: 300;
@@ -63,7 +64,7 @@
 }
 
 .soc-link-footer:hover{
-  color: #00b068;
+  color: var(--accet-green);
 }
 
 @media screen and (min-width: 768px) {

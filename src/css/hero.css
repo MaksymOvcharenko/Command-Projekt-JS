@@ -47,6 +47,7 @@
   }
   .hero-link-design:hover .hero-design-container {
     background: rgba(0, 176, 104, 0.6);
+    overflow: hidden;
   }
   .hero-description {
     font-family: 'Poppins', sans-serif;
@@ -103,7 +104,8 @@
     display: flex;
     justify-content: center;
   }
-  .social-link {
+  .social-link:hover {
+    color: var(--accet-green);
   }
 }
 @media screen and (min-width: 768px) {
@@ -142,6 +144,10 @@
     line-height: 160%;
     letter-spacing: 0.03em;
     width: 704px;
+  }
+  .social-list {
+    flex-direction: row;
+    gap: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
