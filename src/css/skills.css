@@ -17,6 +17,7 @@ visually-hidden {
   display: flex;
   text-align: center;
   justify-content: center;
+  padding-bottom: 80px;
 }
 
 .skillstech-container {
@@ -127,6 +128,13 @@ visually-hidden {
   .skills-accen {
     transform: rotate(2deg) translateX(-10px);
   }
+  .skillstech {
+    padding-bottom: 124px;
+  }
 }
 
-@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 1280px) {
+  .skillstech {
+    padding-bottom: 164px;
+  }
+}

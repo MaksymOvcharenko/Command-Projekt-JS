@@ -1,5 +1,4 @@
 .about-me {
-  padding-top: 80px;
   padding-bottom: 80px;
 }
 
@@ -87,7 +86,6 @@
 
 @media screen and (min-width: 768px) {
   .about-me {
-    padding-top: 124px;
     padding-bottom: 124px;
   }
 
@@ -150,7 +148,6 @@
 
 @media screen and (min-width: 1280px) {
   .about-me {
-    padding-top: 164px;
     padding-bottom: 164px;
   }
 

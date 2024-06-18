@@ -1,5 +1,6 @@
 @media screen and (min-width: 0px) {
   .hero {
+    padding-bottom: 80px;
   }
   .heros {
     background-image: url('../img/Hero-bg1.png'), url('../img/Hero-bg2.png');
@@ -113,6 +114,9 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 124px;
+  }
   .heros {
     padding-top: 88px;
     /* width: 704px; */
@@ -155,6 +159,9 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .hero {
+    padding-bottom: 164px;
+  }
   .heros {
     padding-top: 88px;
     /* width: 704px; */
