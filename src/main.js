@@ -6,6 +6,7 @@ import { initializeThemeSwitcher } from './js/theme-switcher';
 import './js/about-me';
 import './js/faq';
 import './js/modal-popup';
+import './js/benefits';
 // document.addEventListener('DOMContentLoaded', function () {
 //   initializeThemeSwitcher();
 // });
