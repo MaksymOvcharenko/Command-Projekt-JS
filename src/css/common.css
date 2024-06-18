@@ -73,3 +73,7 @@ body {
     padding-right: 32px;
   }
 }
+
+a {
+  transition: all 155ms ease-in-out;
+}

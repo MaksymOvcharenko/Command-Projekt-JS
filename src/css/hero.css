@@ -63,7 +63,6 @@
     stroke: #00b068;
     fill: #00b068;
     transition: transform 1s ease;
-    z-index: 1;
   }
   .hero-design-link {
     font-family: 'Poppins', sans-serif;
@@ -86,6 +85,7 @@
     width: 165px;
     height: 90px;
     overflow: hidden;
+    transition: all 500ms ease;
   }
   .social-container {
     background: #e4e5e6;
