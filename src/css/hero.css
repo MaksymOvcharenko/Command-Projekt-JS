@@ -28,7 +28,7 @@
   }
   .hero-link-design {
     display: flex;
-    width: 320px;
+    /* width: 320px; */
     height: 92px;
     align-items: center;
     gap: 12px;
