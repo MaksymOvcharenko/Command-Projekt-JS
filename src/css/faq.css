@@ -26,7 +26,6 @@
     justify-content: center;
   }
   .ac {
-    width: 272px;
     padding: 28px 24px;
     margin-top: 0px;
     border: none;
@@ -93,7 +92,7 @@
 
   .ac .ac-header .ac-trigger::after {
     content: url(../img/faqnew.svg);
-    /* text-align: left; */
+
     background-color: transparent;
     width: 15px;
     -webkit-transform: translate(80%, -50%);
@@ -112,19 +111,6 @@
     border: none;
     border-radius: 16px;
   }
-  /* .arowfaq {
-    stroke: var(--color-text);
-    fill: var(--color-text);
-    content: url(../img/arowfaq.svg);
- 
-    background-color: transparent;
-    width: 15px;
-    -webkit-transform: translate(80%, -50%);
-    transform: translate(80%, -50%);
-    position: absolute;
-    right: 12px;
-    top: 40%;
-  } */
 }
 @media screen and (min-width: 768px) {
   .FAQ {
