@@ -1,10 +1,9 @@
 .about-me {
-  padding-top: 80px;
   padding-bottom: 80px;
 }
 
 .about-me-title {
-  font-family: "Impact", sans-serif;
+  font-family: 'Impact', sans-serif;
   font-weight: 400;
   font-size: 52px;
   line-height: 1.23;
@@ -31,7 +30,7 @@
 }
 
 .info-title {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.25;
@@ -42,7 +41,7 @@
 }
 
 .about-me-txt {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
@@ -87,7 +86,6 @@
 
 @media screen and (min-width: 768px) {
   .about-me {
-    padding-top: 124px;
     padding-bottom: 124px;
   }
 
@@ -150,7 +148,6 @@
 
 @media screen and (min-width: 1280px) {
   .about-me {
-    padding-top: 164px;
     padding-bottom: 164px;
   }
 
