@@ -79,7 +79,7 @@
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-.animation.animate {
+.animation.visible {
   opacity: 1;
   transform: translateX(0);
 }

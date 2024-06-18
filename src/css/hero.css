@@ -39,7 +39,7 @@
     overflow: hidden;
   }
   .hero-link-design:hover .hero-arrow {
-    transition: transform 1s ease;
+    transition: transform 1s ease-in-out;
     transform: translateX(100px);
   }
   .hero-link-design:hover .hero-design-link {
@@ -63,6 +63,8 @@
   .hero-arrow {
     stroke: #00b068;
     fill: #00b068;
+    transition: transform 1s ease;
+    z-index: 1;
   }
   .hero-design-link {
     font-family: 'Poppins', sans-serif;
@@ -73,6 +75,8 @@
     text-transform: uppercase;
     position: relative;
     overflow: hidden;
+    transition: transform 1s ease;
+    z-index: 1;
   }
   .hero-design-container {
     position: absolute;
