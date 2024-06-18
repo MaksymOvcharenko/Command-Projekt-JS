@@ -186,6 +186,8 @@ function sendData(event) {
     return;
   }
 
+ checkmark.style.display = 'none'; 
+
   iziToast.info({ title: 'Info', message: 'Sending message...', close: false });
 
   fetch('https://portfolio-js.b.goit.study/api/requests', {
@@ -198,7 +200,9 @@ function sendData(event) {
   })
     .then(response => {
       if (response.ok) {
-        showModal('success', 'Your message has been sent successfully.');
+
+        showModal('success', 'The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.');
+
         form.reset();
         localStorage.removeItem('feedback-form-state');
       } else {
@@ -225,6 +229,20 @@ function validateEmail(email) {
 function showModal(type, message) {
   const modalWindow = document.querySelector('.backdrop');
   const modalMessage = document.querySelector('.modal-description');
+
+
+  if (!modalWindow || !modalMessage) {
+    console.error('Modal elements not found');
+    return;
+  }
+
+  console.log('Opening modal with message:', message); 
+
+  modalMessage.textContent = message;
+  modalWindow.classList.add('is-open'); 
+  console.log('Modal opened');
+}
+
 
   if (!modalWindow || !modalMessage) {
     console.error('Modal elements not found');
