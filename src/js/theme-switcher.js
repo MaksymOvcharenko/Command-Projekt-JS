@@ -38,6 +38,7 @@ function applyDarkThemeStyles() {
   document.documentElement.style.setProperty('--bg-color', '#292929');
   document.documentElement.style.setProperty('--light-grey', '#2a2d32');
   document.documentElement.style.setProperty('--bg-skills', '#214136');
+  document.documentElement.style.setProperty('--border-color', '#2A2D32');
 }
 
 function applyLightThemeStyles() {
@@ -46,6 +47,7 @@ function applyLightThemeStyles() {
   document.documentElement.style.setProperty('--bg-color', '#f0f0f0');
   document.documentElement.style.setProperty('--light-grey', '#e4e5e6');
   document.documentElement.style.setProperty('--bg-skills', '#bcdfd1');
+  document.documentElement.style.setProperty('--border-color', '#CCC');
 }
 
 document.addEventListener('DOMContentLoaded', function () {

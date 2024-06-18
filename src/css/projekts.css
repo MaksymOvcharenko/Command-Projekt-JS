@@ -1,6 +1,5 @@
 .my-projects {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 .projects-title {
   color: var(--color-text);
@@ -126,7 +125,6 @@
 
 @media screen and (min-width: 768px) {
   .my-projects {
-    padding-top: 124px;
     padding-bottom: 124px;
   }
   .projects-title {
@@ -152,12 +150,6 @@
   .projects-sub {
     margin-top: 16px;
   }
-  /* .div-list {
-    border: solid 2px red;
-    display: flex;
-    flex-direction: column;
-    gap: 12px 12px;
-  } */
 
   .projects-p {
     font-size: 36px;
@@ -189,7 +181,6 @@
     padding: 0 136px;
   }
   .my-projects {
-    padding-top: 164px;
     padding-bottom: 164px;
   }
   .projects-title {
